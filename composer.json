@@ -1,0 +1,27 @@
+{
+    "name": "user/nerdlibrary",
+    "type": "project",
+    "authors": [
+        {
+            "name": "innocent-george-mithu-nyamusa",
+            "email": "innocentnyamusa@gmail.com"
+        }
+    ],
+    "require": {
+      "sendgrid/sendgrid": "~7",
+      "ext-pdo": "*",
+        "verot/class.upload.php": "^2.1",
+        "ext-openssl": "*",
+        "intervention/image": "^2.7",
+        "paynow/php-sdk": "^1.0"
+    },
+  "autoload": {
+
+        "psr-4": {
+            "Classes\\": "classes/"
+        }
+    },
+    "config": {
+      "classmap-authoritative": true
+    }
+}

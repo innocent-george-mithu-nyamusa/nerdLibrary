@@ -1,0 +1,26 @@
+[
+  {
+    "first_name": "Innocent",
+    "last_name": "Nyamusa",
+    "title": "Student",
+    "location": "Harare",
+    "user_id": "89",
+    "course_enrolments": "1",
+    "first_friend": "Joshua Igwebu",
+    "second_friend": null,
+    "profile_picture": "/images/profile-images/c9d41ea53b8ba01fd3adeac6c25f714a_user_profile.jpeg",
+    "cover_image": "/images/covers/1d770e24d2a6aa8b98b1485bc2a92949_profile_large_cover.png"
+  },
+  {
+    "first_name": "Joshua",
+    "last_name": "Igwebu",
+    "title": "Lecturer",
+    "location": "Harare",
+    "user_id": "110",
+    "course_enrolments": "0",
+    "first_friend": "Innocent Nyamusa",
+    "second_friend": null,
+    "profile_picture": "/images/profile-images/avatar-w.png",
+    "cover_image": "/images/covers/default_background_cover.jpeg"
+  }
+]

@@ -1,0 +1,17 @@
+.error_input {
+    border-bottom: solid 1px #ff0000 !important;
+}
+
+.error {
+    clear: both;
+    display: none;
+    color: #e7505a;
+    padding-top: 20px;
+}
+
+.success {
+    clear: both;
+    display: none;
+    color: #96c346;
+    padding-top: 20px;
+}
