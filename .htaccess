@@ -1,0 +1,109 @@
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+
+php_value memory_limit 256M
+
+
+ErrorDocument 404 /error-404.php
+#
+#php_flag session.auto_start off
+#php_flag session.use_cookies on
+#php_flag session.use_only_cookies on
+#php_flag session.use_trans_sid off
+#
+##Comment out the following line for php < 5.5.2
+#php_flag session.use_strict_mode on
+#
+#php_value session.name nerdLibrary
+#php_value session.cache_limiter nocache
+#
+##Cookie Settings
+##php_value session.cookie_domain ''
+#php_value session.cookie_path '/persistent'
+#php_value session.cookie_lifetime 0
+#php_value session.cookie_httponly on
+#php_value session.cookie_secure off
+
+php_value date.timezone 'Africa/Harare'
+###
+#php_value session.gc_maxlifetime 1440
+#php_value session.gc_probability 1
+#php_value session.gc_divisor 100
+
+RewriteEngine on
+
+RewriteRule ^home$ index.php [NC,L]
+RewriteRule ^login_account$ login.php [NC,L]
+RewriteRule ^sign_up$ sign_up.php [NC,L]
+RewriteRule ^logout_account$ logout.php [NC,L]
+RewriteRule ^explore$ explore.php [NC,L]
+
+RewriteRule ^profile/overview$ user-profile-overview.php [NC,L]
+RewriteRule ^profile/main$ user-profile-main.php [NC,L]
+RewriteRule ^profile/photos$ user-profile-photos.php [NC,L]
+RewriteRule ^profile/friends$ user-profile-friends.php [NC,L]
+RewriteRule ^profile/settings$ user-settings.php [NC,L]
+
+RewriteRule ^feed$ main-user-feed.php [NC,L]
+
+RewriteRule ^gateways/paynow/update$ paymentReceive.php [NC,L]
+RewriteRule ^return?gateway=paynow$ payment.php [NC,L]
+
+###################################################################TODO::BUILD THESE
+RewriteRule ^support$ user-settings.php [NC,L]
+RewriteRule ^helpdesk$ user-settings.php [NC,L]
+
+RewriteRule ^interests$ interests-category.php [NC,L]
+RewriteRule ^pages/main$ pages-main-dashboard.php [NC,L]
+#RewriteRule ^pages/main$ pages-main-dashboard.php [NC,L]
+RewriteRule ^stories$ user-stories.php [NC,L]
+
+RewriteRule ^questions/categories$ questions-categories.php [NC,L]
+RewriteRule ^questions/home$ questions-home.php [NC,L]
+RewriteRule ^questions/settings$ questions-settings.php [NC,L]
+RewriteRule ^stats$ questions-stats.php [NC,L]
+
+RewriteRule ^news$ news.php [NC,L]
+RewriteRule ^map$ friends-locator-map.php [NC,L]
+RewriteRule ^shop$ shop.php [NC,L]
+RewriteRule ^shop-checkout$ shop-checkout.php [NC,L]
+
+RewriteRule ^events$ events.php [NC,L]
+RewriteRule ^events/([A-Za-z0-9-]+)/?$ event.php?evId=$1 [NC,L]
+##################################################################TODO::UNTIL HERE
+
+RewriteRule ^admin$ admin/index.php [NC,L]
+
+RewriteRule ^course-track/([A-Za-z0-9-]+)/?$ course-track.php?sId=$1 [NC,L]
+RewriteRule ^watch/([A-Za-z0-9-]+)/?$ video-player.php?eId=$1 [NC,L]
+RewriteRule ^chapter/([A-Za-z0-9-]+)/?$ course-chapter.php?cId=$1 [NC,L]
+
+RewriteRule ^course-library/categories$ courses-categories.php [NC,L]
+RewriteRule ^course-library/category/([A-Za-z0-9-]+)/?$ courses-category-explore.php?cId=$1 [NC,L]
+
+RewriteRule ^course-library/([A-Za-z0-9-]+)/?$ course-library.php?sId=$1 [NC,L]
+RewriteRule ^course-library/completed/([A-Za-z0-9-]+)/?$ course-library-completed.php?sId=$1 [NC,L]
+RewriteRule ^course-library/viewed/([A-Za-z0-9-]+)/?$ course-library-viewed.php?sId=$1 [NC,L]
+RewriteRule ^course-library/all/([A-Za-z0-9-]+)/?$ course-series-library-all.php?sId=$1 [NC,L]
+RewriteRule ^course-library/incompleted/([A-Za-z0-9-]+)/?$ course-library-incompleted.php?sId=$1 [NC,L]
+RewriteRule ^course-library/liked/([A-Za-z0-9-]+)/?$ course-library-liked.php?sId=$1 [NC,L]
+RewriteRule ^course-library/watch-later/([A-Za-z0-9-]+)/?$ course-library.php?sId=$1 [NC,L]
+
+RewriteRule ^myclass-library/incompleted/$ course-library.php [NC,L]
+
+#RewriteRule ^me/([A-Za-z0-9-]+)/?$ includes/user_profile.php?user_id=$1
+#RewriteRule ^me/up/([A-Za-z0-9-]+)/?$ includes/user_profile.php?src=update_user&user_id=$1
+
+#
+#RewriteRule ^me/ar/$ includes/user_profile.php?src=add_request [NC,L]
+#
+#RewriteRule ^adminstration/$ admin/admin.php
+#RewriteRule ^adminstration/(add_item|update_item|delete_item|all_items_operations|all_categories|add_category|user_items|users_overview|rewards_overview)$ admin/admin.php?src=$1 [NC,L]
+#
+#RewriteRule ^adminstration/Ucat/([A-Za-z0-9-]+)/?$ admin/admin.php?src=update_category&cat_id=$1 [NC,L]
+#
+#
+#RewriteRule ^adminstration/Uit/([A-Za-z0-9-]+)/?$ admin/admin.php?src=update_item&it_id=$1 [NC,L]
+#RewriteRule ^adminstration/Dit/([A-Za-z0-9-]+)/?$ admin/admin.php?src=delete_item&it_id=$1 [NC,L]
+
