@@ -58,7 +58,7 @@ session_start();
                                 Login
                             </a>
                         </div>
-                        <a id="signup-button" href="signup.php" class="button is-cta is-solid primary-button raised">
+                        <a id="signup-button" href="/sign_up" class="button is-cta is-solid primary-button raised">
                             Sign Up
                         </a>
                     </div>
