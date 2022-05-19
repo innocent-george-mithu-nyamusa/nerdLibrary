@@ -1,7 +1,0 @@
-docs/
-vendor/
-.idea/
-.editorconfig
-editorconfig.json
-*.zip
-composer.lock
