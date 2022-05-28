@@ -1,6 +1,6 @@
 /*! map.js | Friendkit | © Css Ninja. 2019-2020 */
 "use strict";
-var map, themeColors = {primary: "#3d70b2", secondary: "#41d6c3"}, locations = {
+var map, themeColors = {primary: "#6F2B8C", secondary: "#41d6c3"}, locations = {
     type: "FeatureCollection",
     features: [{
         type: "Feature",
