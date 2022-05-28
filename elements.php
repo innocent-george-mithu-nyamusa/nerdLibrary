@@ -2108,316 +2108,316 @@
                     <div class="ui-elements">
                         <div class="columns is-multiline has-text-centered">
                             <div class="column is-2">
-                                <i data-vi="activity" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="activity" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="angle-top" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="angle-top" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="angle-bottom" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="angle-bottom" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="angle-left" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="angle-left" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="angle-right" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="angle-right" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="arrow-top" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="arrow-top" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="arrow-bottom" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="arrow-bottom" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="arrow-left" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="arrow-left" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="arrow-right" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="arrow-right" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="badge" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="badge" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="bag" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="bag" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="battery" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="battery" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="bottle" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="bottle" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="box" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="box" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="briefcase" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="briefcase" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="building" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="building" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="bulb" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="bulb" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="bullhorn" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="bullhorn" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="calculator" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="calculator" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="calendar" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="calendar" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="camera" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="camera" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="card" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="card" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="cart" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="cart" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="chat" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="chat" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="check" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="check" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="clock" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="clock" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="close" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="close" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="cloud-tools" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="cloud-tools" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="cloud" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="cloud" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="cog" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="cog" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="controller" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="controller" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="cookie" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="cookie" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="cup" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="cup" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="desktop" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="desktop" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="doc" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="doc" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="envelope" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="envelope" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="equaliser" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="equaliser" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="export" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="export" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="eye" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="eye" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="fingerprint" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="fingerprint" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="flag" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="flag" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="flame" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="flame" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="flask" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="flask" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="gem" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="gem" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="gift" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="gift" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="graduation-cap" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="graduation-cap" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="graph-bar" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="graph-bar" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="graph-pie" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="graph-pie" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="graph-poly" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="graph-poly" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="headphone" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="headphone" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="heart" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="heart" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="home" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="home" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="hotel" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="hotel" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="hourglass" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="hourglass" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="image" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="image" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="import" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="import" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="industry" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="industry" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="infinity" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="infinity" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="jar" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="jar" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="laptop" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="laptop" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="layers" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="layers" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="lock" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="lock" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="map-marker" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="map-marker" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="menu" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="menu" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="message" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="message" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="mobile" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="mobile" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="moon" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="moon" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="move" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="move" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="music-note" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="music-note" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="mute" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="mute" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="newspaper" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="newspaper" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="pen" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="pen" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="pencil" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="pencil" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="processor" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="processor" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="radio" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="radio" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="refresh" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="refresh" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="rocket" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="rocket" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="search-disabled" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="search-disabled" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="search" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="search" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="server" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="server" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="share" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="share" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="shield" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="shield" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="shop" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="shop" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="star" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="star" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="sun" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="sun" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="switch-off" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="switch-off" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="swiych-on" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="swiych-on" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="tablet" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="tablet" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="tag" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="tag" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="tee" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="tee" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="thunder" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="thunder" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="ticket" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="ticket" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="trash" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="trash" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="user" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="user" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="van" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="van" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="video-recording" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="video-recording" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="volume-high" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="volume-high" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="volume-medium" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="volume-medium" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="volume-slow" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="volume-slow" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="vr" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="vr" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="website" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="website" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="wrench" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="wrench" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="zoom-in" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="zoom-in" data-vi-primary="#6F2B8C"></i>
                             </div>
                             <div class="column is-2">
-                                <i data-vi="zoom-out" data-vi-primary="#3d70b2"></i>
+                                <i data-vi="zoom-out" data-vi-primary="#6F2B8C"></i>
                             </div>
                         </div>
                     </div>
