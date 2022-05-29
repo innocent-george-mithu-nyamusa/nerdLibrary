@@ -4,6 +4,8 @@
 namespace Classes;
 
 
+use Exception;
+
 class Mobile extends Dbh
 {
     private string $mobileOptionId;
@@ -71,7 +73,7 @@ class Mobile extends Dbh
             $createMobilePaymentStmt->closeCursor();
 
             return $result;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create mobile payment option ". $exception->getMessage();
             return false;
         }

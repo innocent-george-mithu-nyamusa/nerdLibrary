@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class Enrollments extends Dbh
@@ -51,7 +52,7 @@ class Enrollments extends Dbh
             $status = $enrollInCourseStmt->execute();
             $enrollInCourseStmt->closeCursor();
             return $status;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to enroll in course ". $exception->getMessage();
         }
     }
@@ -74,7 +75,7 @@ class Enrollments extends Dbh
 
             return $totalStudents;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get that number of students ". $exception->getMessage();
             return 0;
         }
@@ -94,7 +95,7 @@ class Enrollments extends Dbh
             $results = $getMyEnrollmentsStmt->fetchAll(PDO::FETCH_ASSOC);
             $getMyEnrollmentsStmt->closeCursor();
             return $results;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get enrollments ". $exception->getMessage();
             return null;
         }
@@ -115,7 +116,7 @@ class Enrollments extends Dbh
             $getMyEnrollmentsStmt->closeCursor();
 
             return $results;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get enrollments ". $exception->getMessage();
             return 0;
         }
@@ -135,7 +136,7 @@ class Enrollments extends Dbh
             $results = $getMyEnrollmentsStmt->fetchAll(PDO::FETCH_ASSOC);
             $getMyEnrollmentsStmt->closeCursor();
             return $results;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get enrollments ". $exception->getMessage();
             return null;
         }
@@ -157,7 +158,7 @@ class Enrollments extends Dbh
             $checkEnrollmentStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to check if user has enrolled for a course " . $exception->getMessage();
             return false;
         }

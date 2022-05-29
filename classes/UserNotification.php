@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class UserNotification extends Notifcation
@@ -106,7 +107,7 @@ class UserNotification extends Notifcation
 
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create notification ". $exception->getMessage();
             return false;
         }
@@ -151,7 +152,7 @@ class UserNotification extends Notifcation
             $getFriendShipsStmt->closeCursor();
 
             return $result ?? [];
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get friendships ".$exception->getMessage();
             return [];
         }

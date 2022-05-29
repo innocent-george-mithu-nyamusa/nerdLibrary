@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class Videos extends Dbh
@@ -62,7 +63,7 @@ class Videos extends Dbh
             $addVideoStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to add video ". $exception->getMessage();
             return false;
         }
@@ -84,7 +85,7 @@ class Videos extends Dbh
             $getVideoStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to add video ". $exception->getMessage();
             return false;
         }
@@ -107,7 +108,7 @@ class Videos extends Dbh
 
             return $result??[];
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to add video ". $exception->getMessage();
             return [];
         }

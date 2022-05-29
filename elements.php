@@ -2079,7 +2079,7 @@
                         <div class="buttons">
                             <span class="morphing-btn-wrap">
                                 <a data-morphing="" id="morphing" data-src="#morphing-content"
-                                    href="javascript:;" class="button is-solid primary-button raised is-rounded morphing-btn">
+                                   href="javascript:" class="button is-solid primary-button raised is-rounded morphing-btn">
                                     Morph Button
                                 </a>
                             </span>

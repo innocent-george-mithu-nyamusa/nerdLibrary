@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class Interests extends Dbh
@@ -51,7 +52,7 @@ class Interests extends Dbh
             $createInterestStmt->closeCursor();
 
             return $result;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create exception ". $exception->getMessage();
             return false;
         }
@@ -73,7 +74,7 @@ class Interests extends Dbh
             $result = explode(",", $result[0]["interest_items"]);
 
             return $result;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create exception ". $exception->getMessage();
             return [];
         }

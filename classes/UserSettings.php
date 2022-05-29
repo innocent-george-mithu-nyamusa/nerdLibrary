@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class UserSettings extends Dbh
@@ -88,7 +89,7 @@ class UserSettings extends Dbh
             $result = $createSettingsStmt->execute();
             $createSettingsStmt->closeCursor();
             return $result;
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to create user settings ". $exception->getMessage();
             return false;
         }
@@ -105,7 +106,7 @@ class UserSettings extends Dbh
 
             return $result[0];
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get user seetings ". $exception->getMessage();
             return null;
         }
@@ -125,7 +126,7 @@ class UserSettings extends Dbh
             $enable2FAsStmt->closeCursor();
 
             return $result;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
 
             echo "Failed to enable 2 Factor Authentication ". $exception->getMessage();
             return false;
@@ -148,7 +149,7 @@ class UserSettings extends Dbh
             $result = $updateSettingStmt->execute();
             $updateSettingStmt->closeCursor();
             return $result;
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update public posts setting ". $exception->getMessage();
             return false;
         }
@@ -169,7 +170,7 @@ class UserSettings extends Dbh
             $result = $updateSettingStmt->execute();
             $updateSettingStmt->closeCursor();
             return $result;
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update public profile setting ". $exception->getMessage();
 
             return false;
@@ -191,7 +192,7 @@ class UserSettings extends Dbh
             $result = $updateSettingStmt->execute();
             $updateSettingStmt->closeCursor();
             return $result;
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update public posts setting ". $exception->getMessage();
             return false;
         }
@@ -213,7 +214,7 @@ class UserSettings extends Dbh
             $updateSettingStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update public posts setting ". $exception->getMessage();
             return false;
         }
@@ -234,7 +235,7 @@ class UserSettings extends Dbh
             $result = $updateSettingStmt->execute();
             $updateSettingStmt->closeCursor();
             return $result;
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update public posts setting ". $exception->getMessage();
             return false;
         }
@@ -256,7 +257,7 @@ class UserSettings extends Dbh
             $updateSettingStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
 
             echo "Failed to update public posts setting ". $exception->getMessage();
             return false;

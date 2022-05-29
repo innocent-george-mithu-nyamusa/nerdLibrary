@@ -4,6 +4,7 @@ namespace Classes;
 
 
 use DateTime;
+use Exception;
 use PDO;
 
 class SubscriptionRequest extends Dbh
@@ -74,7 +75,7 @@ class SubscriptionRequest extends Dbh
             $createRequestStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create subscription". $exception->getMessage();
             return false;
         }
@@ -95,7 +96,7 @@ class SubscriptionRequest extends Dbh
             $getSubscriptionsStmt->closeCursor();
 
             return $result?? [];
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get all exceptions ". $exception->getMessage();
             return [];
         }
@@ -115,7 +116,7 @@ class SubscriptionRequest extends Dbh
             $getSubscriptionsStmt->closeCursor();
 
             return $result?? [];
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get all exceptions ". $exception->getMessage();
             return [];
         }
@@ -135,7 +136,7 @@ class SubscriptionRequest extends Dbh
             $getSubscriptionsStmt->closeCursor();
 
             return $result ?? [];
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get all exceptions ". $exception->getMessage();
             return [];
         }
@@ -150,7 +151,7 @@ class SubscriptionRequest extends Dbh
             $result  = $this->connect()->prepare($clearRequestsQuery)->execute();
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create subscription". $exception->getMessage();
             return false;
         }
@@ -172,7 +173,7 @@ class SubscriptionRequest extends Dbh
 
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create subscription". $exception->getMessage();
             return false;
         }
@@ -194,7 +195,7 @@ class SubscriptionRequest extends Dbh
 
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create subscription". $exception->getMessage();
             return false;
         }

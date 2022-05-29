@@ -5,6 +5,7 @@ use Classes\CommentView;
 use Classes\ResourceView;
 use Classes\UserPostView;
 use Classes\UserView;
+use Classes\Utilities;
 
 include "../vendor/autoload.php";
 session_start();
@@ -26,7 +27,7 @@ if (isset($_POST)) {
     <img alt="" data-demo-src="/images/profile-images/' . $_SESSION["image"] . '" src="https://via.placeholder.com/300x300">
     <div class="user-meta">
         <span>' . $_SESSION["user_fullname"] . '</span>
-        <span><small>' . \Classes\Utilities::elapsedTimeString($postDetails["post_datetime"]) . '</small></span>
+        <span><small>' . Utilities::elapsedTimeString($postDetails["post_datetime"]) . '</small></span>
     </div>
     <button class="button" type="button">Follow</button>
     <div class="dropdown is-spaced is-right dropdown-trigger">
@@ -132,7 +133,7 @@ if (isset($_POST)) {
             <p>' . $allComment["comment"] . '</p>
             <div class="comment-actions">
                 <a class="is-inverted" href="javascript:void(0);">Like</a>
-                <span>' . \Classes\Utilities::elapsedTimeString($allComment["comment_date"]) . '</span>
+                <span>' . Utilities::elapsedTimeString($allComment["comment_date"]) . '</span>
                 <div class="likes-count">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                     <span>' . $commentLikes . '</span>
@@ -156,7 +157,7 @@ if (isset($_POST)) {
             <p>' . $replyComment["comment"] . '</p>
             <div class="comment-actions">
                 <a class="is-inverted" href="javascript:void(0);">Like</a>
-                <span>' . \Classes\Utilities::elapsedTimeString($replyComment["comment_date"]) . '</span>
+                <span>' . Utilities::elapsedTimeString($replyComment["comment_date"]) . '</span>
                 <div class="likes-count">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
                     <span>' . $replyCommentLikes . '</span>

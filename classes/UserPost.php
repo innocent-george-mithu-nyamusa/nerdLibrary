@@ -3,6 +3,7 @@
 namespace Classes;
 
 use DateTime;
+use Exception;
 use PDO;
 
 class UserPost extends Post
@@ -152,7 +153,7 @@ class UserPost extends Post
             $getNumberOfNewPostsStmt->closeCursor();
 
             return $allPosts;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get posts ". $exception->getMessage();
             return 0;
 
@@ -176,7 +177,7 @@ class UserPost extends Post
             $allPosts = $getNumberOfNewPostsStmt->fetchAll(PDO::FETCH_ASSOC);
             $getNumberOfNewPostsStmt->closeCursor();
             return $allPosts;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get posts ". $exception->getMessage();
             return null;
 
@@ -215,7 +216,7 @@ class UserPost extends Post
             $getNumberOfNewPostsStmt->closeCursor();
 
             return $allPosts;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get posts ". $exception->getMessage();
             return null;
 
@@ -317,7 +318,7 @@ class UserPost extends Post
             $getPostsStmt->closeCursor();
 
             return $allPosts ?? [];
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get posts ". $exception->getMessage();
             return null;
         }
@@ -341,7 +342,7 @@ class UserPost extends Post
             $getPostStmt->closeCursor();
 
             return $result;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get post";
             return null;
         }

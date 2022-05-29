@@ -1,12 +1,14 @@
 <?php
 
+use Classes\EnrollmentsView;
+use Classes\RelationshipView;
 use Classes\UserView;
 
 include "vendor/autoload.php";
 
 $userObj = new UserView();
-$enrollmentsObj = new \Classes\EnrollmentsView();
-$friendshipObj = new \Classes\RelationshipView();
+$enrollmentsObj = new EnrollmentsView();
+$friendshipObj = new RelationshipView();
 
 $users = $userObj->getAllUsers();
 

@@ -1,10 +1,13 @@
 <?php
+
+use Classes\ResourceView;
+
 session_start();
 
 include "../vendor/autoload.php";
 
 if(isset($_POST)) {
-    $resourceObj = new \Classes\ResourceView();
+    $resourceObj = new ResourceView();
 
 
     if(isset($_POST)) {

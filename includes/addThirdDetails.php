@@ -9,6 +9,7 @@ use Classes\SignUpView;
 use Classes\UserSettingsView;
 use Classes\UserSubscriptionView;
 use Classes\UserView;
+use Classes\Utilities;
 
 
 include "../vendor/autoload.php";
@@ -25,10 +26,10 @@ if (isset($_POST["accountType"])) {
     $emailObj = new EmailView();
     $settingsObj = new UserSettingsView();
     $notificationSettingsObj = new NotificationSettingsView();
-    $utilityObj = new \Classes\Utilities();
+    $utilityObj = new Utilities();
 
 
-    $userImage = \Classes\Utilities::uploadPhoto($_FILES["user_image"]["name"], $_FILES["user_image"]["tmp_name"], "profile_image");
+    $userImage = Utilities::uploadPhoto($_FILES["user_image"]["name"], $_FILES["user_image"]["tmp_name"], "profile_image");
 //    echo "data in here";
 
     if(is_bool($userImage)) {

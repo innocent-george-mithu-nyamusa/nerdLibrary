@@ -12,7 +12,7 @@ $(document).ready((function () {
         })), e(), $(window).on("resize", (function () {
             e()
         }))
-    };$(".search-button-initiate-focus").on("click", function (){
+    }$(".search-button-initiate-focus").on("click", function (){
         $("#open-mobile-search, .mobile-search .close-icon").click();
     });$(".related-side").length && ($(".related-trigger").on("click", (function () {
         $(".related-side").addClass("is-opened")

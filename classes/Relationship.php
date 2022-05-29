@@ -2,6 +2,8 @@
 
 namespace Classes;
 
+use DateTime;
+use Exception;
 use PDO;
 
 class Relationship extends Dbh
@@ -78,7 +80,7 @@ class Relationship extends Dbh
             $relationCreationStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create relationship ". $exception->getMessage();
             return false;
         }
@@ -103,7 +105,7 @@ class Relationship extends Dbh
             }
             return true;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to check for friendship ". $exception->getMessage();
             return false;
         }
@@ -128,7 +130,7 @@ class Relationship extends Dbh
             }
             return true;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to check for friendship ". $exception->getMessage();
             return false;
         }
@@ -150,7 +152,7 @@ class Relationship extends Dbh
 
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to update relationship ". $exception->getMessage();
         }
     }
@@ -170,7 +172,7 @@ class Relationship extends Dbh
             $updateFriendshipStmt->closeCursor();
 
             return $result;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to remove relationship ". $exception->getMessage();
         }
     }
@@ -194,7 +196,7 @@ class Relationship extends Dbh
 
             return $results;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get my friends ".$exception->getMessage();
             return null;
         }
@@ -206,7 +208,7 @@ class Relationship extends Dbh
         $allFriendShips = $this->myFriendshipsBirthday();
 
         $userObj = new UserView();
-        $currentDate = new \DateTime("now");
+        $currentDate = new DateTime("now");
         $sizeofArray  =  count($allFriendShips);
         $currentYear = $currentDate->format("Y");
         $previousNumberOfDays = 0;
@@ -223,7 +225,7 @@ class Relationship extends Dbh
 
             $userDobYear = substr($user["user_dob"], 0, 4);
             $currentYearBirthday = substr_replace($user["user_dob"], $currentYear, 0, 4);
-            $currentYearBirthday = new \DateTime($currentYearBirthday);
+            $currentYearBirthday = new DateTime($currentYearBirthday);
 //            $userBirthday = $userBirthday->format("-m-d");
 
             $userDateDiff = date_diff($currentDate, $currentYearBirthday);
@@ -273,7 +275,7 @@ class Relationship extends Dbh
 
             return $results?? [];
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get my friends ".$exception->getMessage();
             return [];
         }
@@ -298,7 +300,7 @@ class Relationship extends Dbh
             $getSuggestedFriendsStmt->closeCursor();
 
             return $results;
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get my friends ".$exception->getMessage();
             return null;
         }
@@ -320,7 +322,7 @@ class Relationship extends Dbh
                 $getFinalResultsStmt->closeCursor();
 
                 return $results??[];
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get my friends ".$exception->getMessage(). $exception->getTraceAsString();
             return null;
         }
@@ -348,7 +350,7 @@ class Relationship extends Dbh
 
             return $results;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get my friends ".$exception->getMessage();
             return 0;
         }
@@ -375,7 +377,7 @@ class Relationship extends Dbh
 
             return $results;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get my friends ".$exception->getMessage();
             return 0;
         }
@@ -403,7 +405,7 @@ class Relationship extends Dbh
 
             return $results;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get my friends ".$exception->getMessage();
             return 0;
         }
@@ -425,7 +427,7 @@ class Relationship extends Dbh
 
             return $results;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get my friends ".$exception->getMessage();
             return 0;
         }

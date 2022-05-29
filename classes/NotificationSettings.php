@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class NotificationSettings extends Dbh
@@ -103,7 +104,7 @@ class NotificationSettings extends Dbh
             $createNotificationStmt->closeCursor();
             return $result;
 
-        }catch ( \Exception $exception) {
+        }catch ( Exception $exception) {
             echo "Failed to create notification setting ". $exception->getMessage();
             return false;
         }
@@ -124,7 +125,7 @@ class NotificationSettings extends Dbh
 
             return $result[0];
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get notifications settings ". $exception->getMessage();
             return null;
         }
@@ -146,7 +147,7 @@ class NotificationSettings extends Dbh
             $result = $updateSettingStmt->execute();
             $updateSettingStmt->closeCursor();
             return $result;
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update notifications settings ". $exception->getMessage();
             return false;
         }
@@ -167,7 +168,7 @@ class NotificationSettings extends Dbh
             $updateSettingStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update notifications ". $exception->getMessage();
             return false;
         }
@@ -188,7 +189,7 @@ class NotificationSettings extends Dbh
             $updateSettingStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update notifications ". $exception->getMessage();
             return false;
         }
@@ -209,7 +210,7 @@ class NotificationSettings extends Dbh
             $updateSettingStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update notifications settings". $exception->getMessage();
             return false;
         }
@@ -230,7 +231,7 @@ class NotificationSettings extends Dbh
             $updateSettingStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update notifications settings". $exception->getMessage();
             return false;
         }
@@ -251,7 +252,7 @@ class NotificationSettings extends Dbh
             $updateSettingStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update notifications settings". $exception->getMessage();
             return false;
         }
@@ -272,7 +273,7 @@ class NotificationSettings extends Dbh
             $updateSettingStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to update notifications settings". $exception->getMessage();
             return false;
         }
@@ -293,7 +294,7 @@ class NotificationSettings extends Dbh
             $updateSettingStmt->closeCursor();
             return $result;
 
-        } catch (\Exception $exception){
+        } catch (Exception $exception){
             echo "Failed to update notifications settings". $exception->getMessage();
             return false;
         }

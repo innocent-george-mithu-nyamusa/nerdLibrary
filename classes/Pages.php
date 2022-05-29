@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class Pages extends Dbh
@@ -75,7 +76,7 @@ class Pages extends Dbh
             $allPagesStmt->closeCursor();
 
             return $result??[];
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get all pages ". $exception->getMessage();
             return [];
         }
@@ -97,7 +98,7 @@ class Pages extends Dbh
             $getPageStmt->closeCursor();
 
             return $result[0]?? [];
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get all pages ". $exception->getMessage();
             return [];
         }

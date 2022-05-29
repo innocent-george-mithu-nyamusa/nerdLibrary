@@ -1,11 +1,13 @@
 <?php
 
+use Classes\PhotoView;
+use Classes\UserView;
 use Classes\Utilities;
 
 include "../vendor/autoload.php";
 session_start();
-$userObj = new \Classes\UserView();
-$photoObj = new \Classes\PhotoView();
+$userObj = new UserView();
+$photoObj = new PhotoView();
 
 $user = $userObj->getUser($_SESSION["user_id"]);
 

@@ -1,10 +1,12 @@
 <?php
 
 use Classes\EpisodeView;
+use Classes\ProgressTrackView;
+
 session_start();
 include "../vendor/autoload.php";
 
-$progressObj = new \Classes\ProgressTrackView();
+$progressObj = new ProgressTrackView();
 
 if(isset($_POST)) {
 //    print_r($_POST);x

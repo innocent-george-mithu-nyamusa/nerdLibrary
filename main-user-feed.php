@@ -2462,7 +2462,6 @@ if ($numberOfAllMyFriends > 6) {
                                 $haveRelations = $relationObj->haveRelationshipYet($friendship["user_id"], $_SESSION["user_id"]);
                                 //Only show the suggested people that the user doesn't already have a relationship with the user
                                 if (!$haveRelations) {
-                                    ;
                                     ?>
                                     <!-- Suggested friend -->
                                     <div class="add-friend-block transition-block">

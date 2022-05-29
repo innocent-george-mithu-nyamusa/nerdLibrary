@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class ProgressTracker extends Dbh
@@ -74,7 +75,7 @@ class ProgressTracker extends Dbh
             $createProgressCheckStmt->closeCursor();
 
             return $result;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to add progress check ". $exception->getMessage();
             return false;
         }
@@ -92,7 +93,7 @@ class ProgressTracker extends Dbh
             $updateLevelStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
 
             echo "Failed to update ". $exception->getMessage();
             return false;
@@ -112,7 +113,7 @@ class ProgressTracker extends Dbh
 
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
 
             echo "Failed to get incomplete episodes ". $exception->getMessage();
             return null;
@@ -134,7 +135,7 @@ class ProgressTracker extends Dbh
             $getIncompleteEpisodesNumberProgressStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
 
             echo "Failed to get incomplete episodes ". $exception->getMessage();
             return 0;
@@ -159,7 +160,7 @@ class ProgressTracker extends Dbh
             $result = $completeStmt->execute();
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to mark episode as complete ". $exception->getMessage();
             return false;
         }
@@ -181,7 +182,7 @@ class ProgressTracker extends Dbh
             $completedEpisodeUpdateStmt->closeCursor();
 
             return $result;
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to mark completed episode ". $exception->getMessage();
             return false;
         }
@@ -205,7 +206,7 @@ class ProgressTracker extends Dbh
 
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to update episode progress ". $exception->getMessage();
             return false;
         }
@@ -232,7 +233,7 @@ class ProgressTracker extends Dbh
             }
 
             return false;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
 
             echo "Failed to check if user watched video ". $exception->getMessage();
             return false;

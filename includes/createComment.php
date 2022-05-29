@@ -3,6 +3,7 @@
 use Classes\ActivityView;
 use Classes\CommentView;
 use Classes\UserNotificationView;
+use Classes\Utilities;
 
 include "../vendor/autoload.php";
 session_start();
@@ -46,7 +47,7 @@ if(isset($_POST)) {
                                     <!-- Content -->
                                     <div class="media-content">
                                         <a href="#">'.$_SESSION["user_fullname"].'</a>
-                                        <span class="time">'.\Classes\Utilities::elapsedTimeString($commentTime).'</span>
+                                        <span class="time">'. Utilities::elapsedTimeString($commentTime).'</span>
                                         <p>'.$_POST["commentText"].'</p>
                                         <!-- Actions -->
                                         <div class="controls">
@@ -105,8 +106,7 @@ if(isset($_POST)) {
         echo "$response";
 
 
-    };
-
+    }
 
 
 }

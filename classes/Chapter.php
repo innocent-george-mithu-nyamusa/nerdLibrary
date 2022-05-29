@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class Chapter extends Dbh
@@ -62,7 +63,7 @@ class Chapter extends Dbh
                $createChapterStmt->closeCursor();
                return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to create chapter ". $exception->getMessage();
             return false;
         }
@@ -83,7 +84,7 @@ class Chapter extends Dbh
             $allSeriesChaptersStmt->closeCursor();
             return $chapters;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
 
             echo "Failed to get chapters in series ". $exception->getMessage();
             return null;
@@ -103,7 +104,7 @@ class Chapter extends Dbh
             $allSeriesChaptersStmt->closeCursor();
             return $chapters;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get chapters in series ". $exception->getMessage();
             return null;
         }
@@ -123,7 +124,7 @@ class Chapter extends Dbh
             $allSeriesChaptersStmt->closeCursor();
             return $chapters;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get chapter". $exception->getMessage();
             return null;
         }
@@ -146,7 +147,7 @@ class Chapter extends Dbh
 
             return $result??0;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
 
             echo "Failed to get last chapter number in series ". $exception->getMessage();
             return 0;

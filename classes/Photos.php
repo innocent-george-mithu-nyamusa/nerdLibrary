@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class Photos extends Dbh {
@@ -79,7 +80,7 @@ class Photos extends Dbh {
             $result = $addPhotoStmt->execute();
             $addPhotoStmt->closeCursor();
             return $result;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to add a new Picture ". $exception->getMessage();
             return false;
         }
@@ -102,7 +103,7 @@ class Photos extends Dbh {
             $getPhotoStmt->closeCursor();
             return $result??[];
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to add a new Picture ". $exception->getMessage();
             return [];
         }

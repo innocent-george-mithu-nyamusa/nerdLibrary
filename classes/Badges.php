@@ -2,6 +2,7 @@
 
 namespace Classes;
 
+use Exception;
 use PDO;
 
 class Badges extends Dbh
@@ -49,7 +50,7 @@ class Badges extends Dbh
             $result = $getBadgesStmt->fetchAll(PDO::FETCH_ASSOC);
             $getBadgesStmt->closeCursor();
             return $result??[];
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to get exception ". $exception->getMessage();
             return [];
         }

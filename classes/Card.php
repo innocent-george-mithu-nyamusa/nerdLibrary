@@ -4,6 +4,7 @@
 namespace Classes;
 
 
+use Exception;
 use PDO;
 
 class Card extends Dbh
@@ -128,7 +129,7 @@ class Card extends Dbh
             $cardAddStmt->closeCursor();
 
             return $result;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create card ". $exception->getMessage();
             return false;
         }
@@ -154,7 +155,7 @@ class Card extends Dbh
             $cardAddStmt->closeCursor();
 
             return $result;
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to update card ". $exception->getMessage();
             return false;
         }
@@ -176,7 +177,7 @@ class Card extends Dbh
             $getCardStmt->closeCursor();
             return $results[0];
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed get card ".$exception->getMessage();
         }
     }

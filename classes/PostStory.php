@@ -3,6 +3,7 @@
 namespace Classes;
 
 use DateTime;
+use Exception;
 use PDO;
 
 class PostStory extends Post
@@ -99,7 +100,7 @@ class PostStory extends Post
             $createStoryStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception) {
+        }catch (Exception $exception) {
             echo "Failed to create story ". $exception->getMessage();
             return false;
 
@@ -134,7 +135,7 @@ class PostStory extends Post
 
             return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get story " . $exception->getMessage();
             return null;
         }
@@ -174,7 +175,7 @@ class PostStory extends Post
             $getStoryStmt->closeCursor();
             return $result;
 
-        }catch (\Exception $exception){
+        }catch (Exception $exception){
             echo "Failed to get stories ". $exception->getMessage();
             return [];
         }

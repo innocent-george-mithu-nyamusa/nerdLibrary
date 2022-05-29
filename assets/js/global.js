@@ -407,7 +407,7 @@ function initPreviewLink(item) {
     var key = "c4a6d7393e4ffef275a15241324a4424", target = $(item).data("shared-link"),
         postId = $(item).data("post-link-id"),
         linkResponse = {}, linkHtml = '', localDomain = 'nerdlife.co.zw', addBlank = true;
-    ;
+
 
     $.ajax({
         url: "https://api.linkpreview.net",
