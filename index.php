@@ -162,7 +162,7 @@ session_start();
                             <?php }
                             }else {
                                 ?>
-                                <a href="explore" class="button">Visit BookStore</a>
+                                <a href="shop" class="button">Visit BookStore</a>
                             <?php
                             }
                             ?>
