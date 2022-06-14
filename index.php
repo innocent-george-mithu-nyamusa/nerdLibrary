@@ -160,6 +160,7 @@ session_start();
                             <?php } else {?>
                             <a href="explore" class="button">Start Learning</a>
                             <?php }
+
                             }else {
                                 ?>
                                 <a href="shop" class="button">Visit BookStore</a>
