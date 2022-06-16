@@ -32,8 +32,8 @@
             <a href="index.php" class="logo">
                 <img class="light-image" src="assets/img/logo/logo.png" alt="Nerd Library Logo">
                 <img class="dark-image" src="assets/img/logo/logo.png" alt="Nerd Library Logo">
-<!--                <img class="light-image" src="assets/img/logo/friendkit-bold.svg" width="112" height="28" alt="">-->
-<!--                <img class="dark-image" src="assets/img/logo/friendkit-white.svg" width="112" height="28" alt="">-->
+                <!--                <img class="light-image" src="assets/img/logo/friendkit-bold.svg" width="112" height="28" alt="">-->
+                <!--                <img class="dark-image" src="assets/img/logo/friendkit-white.svg" width="112" height="28" alt="">-->
             </a>
         </div>
 
@@ -72,7 +72,7 @@
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -99,9 +99,10 @@
     <script src="assets/js/popovers-pages.js"></script>
     <script src="assets/js/lightbox.js"></script>
 
-    <script src="assets/js/password-reset.js" ></script>
+    <script src="assets/js/password-reset.js"></script>
 </body>
 
 
 <!-- Mirrored from friendkit.cssninja.io/login-boxed.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:23 GMT -->
+
 </html>

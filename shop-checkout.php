@@ -3,7 +3,9 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/shop-checkout.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:57:54 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -354,11 +356,11 @@
                         <div id="global-search" class="control">
                             <input id="tipue_drop_input" class="input is-rounded" type="text" placeholder="Search" required>
                             <span id="clear-search" class="reset-search">
-                                    <i data-feather="x"></i>
-                                </span>
+                                <i data-feather="x"></i>
+                            </span>
                             <span class="search-icon">
-                                    <i data-feather="search"></i>
-                                </span>
+                                <i data-feather="search"></i>
+                            </span>
 
                             <div id="tipue_drop_content" class="tipue-drop-content"></div>
                         </div>
@@ -393,33 +395,33 @@
                                     <li class="cart-row">
                                         <img src="assets/img/products/2.svg" alt="" />
                                         <span class="item-meta">
-                                                <span class="item-name">Cool Shirt</span>
-                                        <span class="meta-info">
-                                                    <span class="item-price">$29.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                            <span class="item-name">Cool Shirt</span>
+                                            <span class="meta-info">
+                                                <span class="item-price">$29.00</span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
 
                                     <li class="cart-row">
                                         <img src="assets/img/products/3.svg" alt="" />
                                         <span class="item-meta">
-                                                <span class="item-name">Military Short</span>
-                                        <span class="meta-info">
-                                                    <span class="item-price">$39.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                            <span class="item-name">Military Short</span>
+                                            <span class="meta-info">
+                                                <span class="item-price">$39.00</span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
 
                                     <li class="cart-row">
                                         <img src="assets/img/products/4.svg" alt="" />
                                         <span class="item-meta">
-                                                <span class="item-name">Cool Backpack</span>
-                                        <span class="meta-info">
-                                                    <span class="item-price">$125.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                            <span class="item-name">Cool Backpack</span>
+                                            <span class="meta-info">
+                                                <span class="item-price">$125.00</span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
                                 </ul>
@@ -441,12 +443,12 @@
                                     <label class="theme-toggle">
                                         <input type="checkbox">
                                         <span class="toggler">
-                                                <span class="dark">
-                                                    <i data-feather="moon"></i>
-                                                </span>
-                                        <span class="light">
-                                                    <i data-feather="sun"></i>
-                                                </span>
+                                            <span class="dark">
+                                                <i data-feather="moon"></i>
+                                            </span>
+                                            <span class="light">
+                                                <i data-feather="sun"></i>
+                                            </span>
                                         </span>
                                     </label>
                                 </div>
@@ -963,8 +965,8 @@
                             <div class="buttons">
                                 <a id="checkout-back" class="button is-light" data-step="0">
                                     <span class="icon is-small">
-                                            <i data-feather="arrow-left"></i>
-                                        </span>
+                                        <i data-feather="arrow-left"></i>
+                                    </span>
                                     <span>Back</span>
                                 </a>
                             </div>
@@ -2825,8 +2827,8 @@
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -2957,8 +2959,8 @@
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body has-text-centered">
@@ -2979,7 +2981,7 @@
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -3040,4 +3042,5 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/shop-checkout.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:58:01 GMT -->
+
 </html>

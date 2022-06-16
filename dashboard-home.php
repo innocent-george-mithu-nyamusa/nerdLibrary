@@ -3,7 +3,9 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/dashboard-home.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:18 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -76,12 +78,12 @@
                     <label class="theme-toggle">
                         <input type="checkbox" />
                         <span class="toggler">
-                      <span class="dark">
-                        <i data-feather="moon"></i>
-                      </span>
-                        <span class="light">
-                        <i data-feather="sun"></i>
-                      </span>
+                            <span class="dark">
+                                <i data-feather="moon"></i>
+                            </span>
+                            <span class="light">
+                                <i data-feather="sun"></i>
+                            </span>
                         </span>
                     </label>
                     <div class="buttons">
@@ -121,7 +123,7 @@
                                     <div class="box-line">
                                         <span class="left">Bounce rate</span>
                                         <span class="right">
-                              <span class="positive">2.3%</span>
+                                            <span class="positive">2.3%</span>
                                         </span>
                                     </div>
                                     <div class="box-line">
@@ -188,8 +190,7 @@
                             <div class="stat-block">
                                 <span class="stat-title">Current subscribers</span>
                                 <span class="stat-value">839</span>
-                                <span class="stat-subtitle"
-                          ><span class="positive">+49</span> in last 28 days
+                                <span class="stat-subtitle"><span class="positive">+49</span> in last 28 days
                                 </span>
                             </div>
 
@@ -212,25 +213,25 @@
                                     <div class="box-line">
                                         <span class="left">Post views</span>
                                         <span class="right">
-                              <span class="positive">+7.8%</span>
+                                            <span class="positive">+7.8%</span>
                                         </span>
                                     </div>
                                     <div class="box-line">
                                         <span class="left">Video views</span>
                                         <span class="right">
-                              <span class="negative">-2.3%</span>
+                                            <span class="negative">-2.3%</span>
                                         </span>
                                     </div>
                                     <div class="box-line">
                                         <span class="left">Comments</span>
                                         <span class="right">
-                              <span>+1.4%</span>
+                                            <span>+1.4%</span>
                                         </span>
                                     </div>
                                     <div class="box-line">
                                         <span class="left">Subscriptions</span>
                                         <span class="right">
-                              <span>+5.1%</span>
+                                            <span>+5.1%</span>
                                         </span>
                                     </div>
                                 </div>
@@ -277,8 +278,7 @@
                                         <img class="comment-avatar" src="https://via.placeholder.com/300x300" data-demo-src="assets/img/avatars/rolf.jpg" data-user-popover="13" alt="" />
                                         <div class="comment-meta">
                                             <span class="meta-title">Rolf • 4 days ago</span>
-                                            <span class="meta-content"
-                                >Do you think you can get it done?</span>
+                                            <span class="meta-content">Do you think you can get it done?</span>
                                         </div>
                                         <div class="comment-end">
                                             <img class="end-thumbnail" src="https://via.placeholder.com/1600x900" data-demo-src="assets/img/demo/unsplash/31.jpg" alt="" />
@@ -335,7 +335,7 @@
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -395,4 +395,5 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/dashboard-home.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:18 GMT -->
+
 </html>

@@ -65,7 +65,7 @@ $activityObj = new ActivityView();
 
     $allStories = $storyObj->getUserFeedStories($_SESSION["user_id"]) ?? [];
     ?>
-    
+
     <div class="view-wrapper">
 
         <!--Feed Slider-->
@@ -75,58 +75,58 @@ $activityObj = new ActivityView();
                 <?php
                 foreach ($allStories as $story) {
                     $storyUser = ($userObj->getUser($story["story_owner_id"]))[0];
-                    $storyLikes = $resourceObj->getItemLikes($story["story_id"])?? 0;
+                    $storyLikes = $resourceObj->getItemLikes($story["story_id"]) ?? 0;
 
-                    $storyLiker = ($resourceObj->getPostLikers($story["story_id"]))[0]?? [];
+                    $storyLiker = ($resourceObj->getPostLikers($story["story_id"]))[0] ?? [];
 
-                    $likerDetails = empty($storyLiker) ? null :$userObj->getUser($storyLiker["resource_user_id"]);
+                    $likerDetails = empty($storyLiker) ? null : $userObj->getUser($storyLiker["resource_user_id"]);
                 ?>
-                <!--Item-->
-                <div class="card feed-slider-item">
-                    <div class="card-header">
-                        <div class="media">
-                            <div class="media-left">
-                                <div class="post-avatar">
-                                    <img class="avatar" src="https://via.placeholder.com/150x150" data-demo-src="/images/profile-images/<?php echo $storyUser["user_image"]; ?>" data-user-popover="<?php echo $storyUser["user_no"]; ?>" alt="User image">
+                    <!--Item-->
+                    <div class="card feed-slider-item">
+                        <div class="card-header">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="post-avatar">
+                                        <img class="avatar" src="https://via.placeholder.com/150x150" data-demo-src="/images/profile-images/<?php echo $storyUser["user_image"]; ?>" data-user-popover="<?php echo $storyUser["user_no"]; ?>" alt="User image">
+                                    </div>
+                                </div>
+                                <div class="media-content">
+                                    <span><?php echo $storyUser["user_fullname"]; ?></span>
+                                    <span><?php echo Utilities::elapsedTimeString($story["story_created_datetime"]); ?></span>
+                                </div>
+                                <div class="media-right">
+                                    <span><?php echo Utilities::friendsNumbers("$storyLikes"); ?> Likes</span>
+                                    <button class="button is-liked">
+                                        <i data-feather="heart"></i>
+                                    </button>
+                                    <button class="button">
+                                        <i data-feather="message-circle"></i>
+                                    </button>
+                                    <button class="button">
+                                        <i data-feather="share-2"></i>
+                                    </button>
+                                    <button class="button">
+                                        <i data-feather="more-horizontal"></i>
+                                    </button>
                                 </div>
                             </div>
-                            <div class="media-content">
-                                <span><?php echo $storyUser["user_fullname"]; ?></span>
-                                <span><?php echo Utilities::elapsedTimeString($story["story_created_datetime"]); ?></span>
-                            </div>
-                            <div class="media-right">
-                                <span><?php echo Utilities::friendsNumbers("$storyLikes"); ?> Likes</span>
-                                <button class="button is-liked">
-                                    <i data-feather="heart"></i>
-                                </button>
-                                <button class="button">
-                                    <i data-feather="message-circle"></i>
-                                </button>
-                                <button class="button">
-                                    <i data-feather="share-2"></i>
-                                </button>
-                                <button class="button">
-                                    <i data-feather="more-horizontal"></i>
-                                </button>
+                        </div>
+                        <div class="card-image">
+                            <figure class="image is-4by3">
+                                <a href="https://via.placeholder.com/1600x900" data-demo-href="/images/media/posts/<?php echo $story["story_media"]; ?>" data-fancybox data-caption="Post Image">
+                                    <img src="https://via.placeholder.com/1600x900" data-demo-src="/images/media/posts/<?php echo $story["story_media"]; ?>" alt="Post Image">
+                                </a>
+                            </figure>
+                        </div>
+                        <div class="card-content">
+                            <div class="liked-by">
+                                <?php if ($likerDetails) { ?>
+                                    <img src="https://via.placeholder.com/150x150" data-demo-src="/images/profile-images/<?php echo $likerDetails["user_image"]; ?>" data-user-popover="<?php echo $likerDetails["user_no"]; ?>" alt="User Details">
+                                    <span>Liked by <span><?php echo $likerDetails["user_fullname"] ?></span> and <span><?php echo Utilities::friendsNumbers("$storyLikes"); ?> others</span></span>
+                                <?php } ?>
                             </div>
                         </div>
                     </div>
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <a href="https://via.placeholder.com/1600x900" data-demo-href="/images/media/posts/<?php echo $story["story_media"]; ?>" data-fancybox data-caption="Post Image">
-                                <img src="https://via.placeholder.com/1600x900" data-demo-src="/images/media/posts/<?php echo $story["story_media"]; ?>" alt="Post Image">
-                            </a>
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="liked-by">
-                            <?php if($likerDetails){ ?>
-                            <img src="https://via.placeholder.com/150x150" data-demo-src="/images/profile-images/<?php echo $likerDetails["user_image"]; ?>" data-user-popover="<?php echo $likerDetails["user_no"]; ?>" alt="User Details">
-                                <span>Liked by <span><?php echo $likerDetails["user_fullname"] ?></span> and <span><?php echo Utilities::friendsNumbers("$storyLikes"); ?> others</span></span>
-                            <?php } ?>
-                        </div>
-                    </div>
-                </div>
                 <?php } ?>
 
                 <!--Item-->
@@ -1957,7 +1957,7 @@ $activityObj = new ActivityView();
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -1995,4 +1995,5 @@ $activityObj = new ActivityView();
 
 
 <!-- Mirrored from friendkit.cssninja.io/navbar-v1-feed-slider.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:52:00 GMT -->
+
 </html>

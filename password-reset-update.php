@@ -16,11 +16,11 @@ if (
     if ($userObj->checkValidityPasswordVerificationCode($_GET["verificationToken"])) {
         $verification = true;
     }
-
 } else {
     header("Location: login.php");
 }
 ?>
+
 <head>
 
     <meta charset="utf-8">
@@ -36,6 +36,7 @@ if (
     <link rel="stylesheet" href="assets/css/core.css">
     <link rel="stylesheet" href="assets/css/authentication.css">
 </head>
+
 <body>
 
     <div class="pageloader"></div>
@@ -47,8 +48,8 @@ if (
             <a href="index.php" class="logo">
                 <img class="light-image" src="assets/img/logo/logo.png" alt="Nerd Library Logo">
                 <img class="dark-image" src="assets/img/logo/logo.png" alt="Nerd Library Logo">
-<!--                <img class="light-image" src="assets/img/logo/friendkit-bold.svg" width="112" height="28" alt="">-->
-<!--                <img class="dark-image" src="assets/img/logo/friendkit-white.svg" width="112" height="28" alt="">-->
+                <!--                <img class="light-image" src="assets/img/logo/friendkit-bold.svg" width="112" height="28" alt="">-->
+                <!--                <img class="dark-image" src="assets/img/logo/friendkit-white.svg" width="112" height="28" alt="">-->
             </a>
         </div>
 
@@ -78,15 +79,15 @@ if (
                                 </div>
                                 <div class="field is-flex has-text-centered">
                                     <?php
-                                    if(!$verification) {
+                                    if (!$verification) {
                                     ?>
-                                        <div id='mail_fail' style="display: block;" class='error text-center' >Validation invalid. Either token has expired or Invalid!.</div>
+                                        <div id='mail_fail' style="display: block;" class='error text-center'>Validation invalid. Either token has expired or Invalid!.</div>
                                     <?php
                                     }
                                     ?>
 
                                     <div id='mail_success' class='success text-center'>Password Reset successfully. Proceed to login.</div>
-                                    <div id='mail_fail' class='error text-center' >Password Reset Failed!.</div>
+                                    <div id='mail_fail' class='error text-center'>Password Reset Failed!.</div>
 
                                 </div>
 
@@ -108,7 +109,7 @@ if (
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -134,9 +135,10 @@ if (
     <script src="assets/js/popovers-users.js"></script>
     <script src="assets/js/popovers-pages.js"></script>
     <script src="assets/js/lightbox.js"></script>
-    <script src="assets/js/password-reset.js" ></script>
+    <script src="assets/js/password-reset.js"></script>
 </body>
 
 
 <!-- Mirrored from friendkit.cssninja.io/login-boxed.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:23 GMT -->
+
 </html>

@@ -28,7 +28,7 @@ $relationObj = new RelationshipView();
 $postObj = new UserPostView();
 $activityObj = new ActivityView();
 
-if($utility::isLoggedIn()) {
+if ($utility::isLoggedIn()) {
     header("Location: index.php");
 }
 
@@ -46,7 +46,7 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title> <?php echo $series["series_name"]; ?>  | NerdLibrary </title>
+    <title> <?php echo $series["series_name"]; ?> | NerdLibrary </title>
     <link rel="icon" type="image/png" href="/assets/img/logo/logo.png" />
 
     <!-- Fonts -->
@@ -80,11 +80,11 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                         <div id="global-search" class="control">
                             <input id="tipue_drop_input" class="input is-rounded" type="text" placeholder="Search" required>
                             <span id="clear-search" class="reset-search">
-                                    <i data-feather="x"></i>
-                                </span>
+                                <i data-feather="x"></i>
+                            </span>
                             <span class="search-icon">
-                                    <i data-feather="search"></i>
-                                </span>
+                                <i data-feather="search"></i>
+                            </span>
                             <div id="tipue_drop_content" class="tipue-drop-content"></div>
                         </div>
                     </div>
@@ -421,33 +421,33 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                                 <li class="cart-row">
                                     <img src="assets/img/products/2.svg" alt="" />
                                     <span class="item-meta">
-                                            <span class="item-name">Cool Shirt</span>
-                                    <span class="meta-info">
-                                                <span class="item-price">$29.00</span>
-                                    <span class="item-quantity">Qty: 01</span>
-                                    </span>
+                                        <span class="item-name">Cool Shirt</span>
+                                        <span class="meta-info">
+                                            <span class="item-price">$29.00</span>
+                                            <span class="item-quantity">Qty: 01</span>
+                                        </span>
                                     </span>
                                 </li>
 
                                 <li class="cart-row">
                                     <img src="assets/img/products/3.svg" alt="" />
                                     <span class="item-meta">
-                                            <span class="item-name">Military Short</span>
-                                    <span class="meta-info">
-                                                <span class="item-price">$39.00</span>
-                                    <span class="item-quantity">Qty: 01</span>
-                                    </span>
+                                        <span class="item-name">Military Short</span>
+                                        <span class="meta-info">
+                                            <span class="item-price">$39.00</span>
+                                            <span class="item-quantity">Qty: 01</span>
+                                        </span>
                                     </span>
                                 </li>
 
                                 <li class="cart-row">
                                     <img src="assets/img/products/4.svg" alt="" />
                                     <span class="item-meta">
-                                            <span class="item-name">Cool Backpack</span>
-                                    <span class="meta-info">
-                                                <span class="item-price">$125.00</span>
-                                    <span class="item-quantity">Qty: 01</span>
-                                    </span>
+                                        <span class="item-name">Cool Backpack</span>
+                                        <span class="meta-info">
+                                            <span class="item-price">$125.00</span>
+                                            <span class="item-quantity">Qty: 01</span>
+                                        </span>
                                     </span>
                                 </li>
                             </ul>
@@ -469,12 +469,12 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                                 <label class="theme-toggle">
                                     <input type="checkbox">
                                     <span class="toggler">
-                                            <span class="dark">
-                                                <i data-feather="moon"></i>
-                                            </span>
-                                    <span class="light">
-                                                <i data-feather="sun"></i>
-                                            </span>
+                                        <span class="dark">
+                                            <i data-feather="moon"></i>
+                                        </span>
+                                        <span class="light">
+                                            <i data-feather="sun"></i>
+                                        </span>
                                     </span>
                                 </label>
                             </div>
@@ -639,16 +639,16 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
 
                             <div class="collections-wrap is-active">
 
-                                <?php  foreach ($allChapters as $chapter) {
+                                <?php foreach ($allChapters as $chapter) {
 
                                     $allEpisodes = $episodeObj->fewChapterEpisodes($chapter["chapter_id"]);
 
-                                    if(!$allEpisodes) {
+                                    if (!$allEpisodes) {
 
                                         $allEpisodes = [];
                                     }
 
-                                    ?>
+                                ?>
                                     <div class="collection">
                                         <div class="header">
                                             <h4><?php echo $chapter["chapter_name"] ?></h4>
@@ -660,7 +660,7 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                                             <?php foreach ($allEpisodes as $episode) {
 
                                                 $lecturer = explode(",", $episode["episode_lecturer_images"])[0];
-                                                ?>
+                                            ?>
 
                                                 <a href="../watch/<?php echo $episode['episode_id']; ?>" class="episode">
                                                     <div class="episode-thumbnail">
@@ -676,7 +676,7 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                                                         <img src="https://via.placeholder.com/150x150" data-demo-src="/images/lecturers/<?php echo $lecturer; ?>" data-page-popover="2" alt="">
                                                         <div class="info">
                                                             <span><?php echo $episode["episode_name"]; ?></span>
-                                                            <span><?php echo $episode["episode_number_in_series"]. " in ". explode(".", $chapter["chapter_name"])[1];  ?></span>
+                                                            <span><?php echo $episode["episode_number_in_series"] . " in " . explode(".", $chapter["chapter_name"])[1];  ?></span>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -2318,8 +2318,8 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -2450,8 +2450,8 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body has-text-centered">
@@ -2473,7 +2473,7 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="/assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="/assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -2534,4 +2534,5 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
 
 
 <!-- Mirrored from friendkit.cssninja.io/video-library.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:04 GMT -->
+
 </html>

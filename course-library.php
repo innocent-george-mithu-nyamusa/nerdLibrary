@@ -29,7 +29,7 @@ $postObj = new UserPostView();
 $activityObj = new ActivityView();
 $utility = new Utilities();
 
-if($utility::isLoggedIn()) {
+if ($utility::isLoggedIn()) {
     header("Location: index.php");
 }
 
@@ -46,7 +46,7 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 
-    <title> <?php echo $series["series_name"]; ?>  | NerdLibrary </title>
+    <title> <?php echo $series["series_name"]; ?> | NerdLibrary </title>
     <link rel="icon" type="image/png" href="/assets/img/logo/logo.png" />
 
     <!-- Fonts -->
@@ -90,16 +90,16 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                             </div>
 
                             <div class="collections-wrap is-active chapters-tab">
-                                <?php  foreach ($allChapters as $chapter) {
+                                <?php foreach ($allChapters as $chapter) {
 
                                     $allEpisodes = $episodeObj->fewChapterEpisodes($chapter["chapter_id"]);
 
-                                    if(!$allEpisodes) {
+                                    if (!$allEpisodes) {
 
                                         $allEpisodes = [];
                                     }
 
-                                    ?>
+                                ?>
                                     <div class="collection">
                                         <div class="header">
                                             <h4><?php echo $chapter["chapter_name"] ?></h4>
@@ -111,7 +111,7 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                                             <?php foreach ($allEpisodes as $episode) {
 
                                                 $lecturer = explode(",", $episode["episode_lecturer_images"])[0];
-                                                ?>
+                                            ?>
 
                                                 <a href="../watch/<?php echo $episode['episode_id']; ?>" class="episode">
                                                     <div class="episode-thumbnail">
@@ -127,7 +127,7 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                                                         <img src="https://via.placeholder.com/150x150" data-demo-src="/images/lecturers/<?php echo $lecturer; ?>" data-page-popover="2" alt="">
                                                         <div class="info">
                                                             <span><?php echo $episode["episode_name"]; ?></span>
-                                                            <span><?php echo $episode["episode_number_in_chapter"]. " in ". explode(".", $chapter["chapter_name"])[1];  ?></span>
+                                                            <span><?php echo $episode["episode_number_in_chapter"] . " in " . explode(".", $chapter["chapter_name"])[1];  ?></span>
                                                         </div>
                                                     </div>
                                                 </a>
@@ -1768,8 +1768,8 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1808,8 +1808,8 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body has-text-centered">
@@ -1831,7 +1831,7 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="/assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="/assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -1892,4 +1892,5 @@ $allChapters = $chapterObj->getChaptersInSeries($series["series_id"]);
 
 
 <!-- Mirrored from friendkit.cssninja.io/video-library.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:04 GMT -->
+
 </html>

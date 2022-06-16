@@ -30,6 +30,7 @@ $photoObj = new PhotoView();
 
 ?>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -55,8 +56,8 @@ $photoObj = new PhotoView();
     <div class="app-overlay"></div>
 
     <?php include "includes/frontEnd/main-navbar.php";
-     $user = $userObj->getUser($_SESSION["user_id"]);
-     $allFriendships = ($relationObj->myFriendsShips($user[0]["user_id"]))?? [];
+    $user = $userObj->getUser($_SESSION["user_id"]);
+    $allFriendships = ($relationObj->myFriendsShips($user[0]["user_id"])) ?? [];
     ?>
     <div class="view-wrapper">
 
@@ -139,42 +140,42 @@ $photoObj = new PhotoView();
 
                                 if ($friendship["relation_initiator_id"] == $_SESSION["user_id"]) {
                                     $friend = ($userObj->getUser($friendship["relation_user_id"]))[0];
-                                }else {
+                                } else {
                                     $friend = ($userObj->getUser($friendship["relation_initiator_id"]))[0];
                                 }
 
-                                ?>
-                            <!--Friend item-->
-                            <div class="column is-3">
-                                <a class="friend-item has-text-centered">
-                                    <div class="avatar-wrap">
-                                        <div class="circle"></div>
-                                        <div class="chat-button">
-                                            <i data-feather="message-circle"></i>
+                            ?>
+                                <!--Friend item-->
+                                <div class="column is-3">
+                                    <a class="friend-item has-text-centered">
+                                        <div class="avatar-wrap">
+                                            <div class="circle"></div>
+                                            <div class="chat-button">
+                                                <i data-feather="message-circle"></i>
+                                            </div>
+                                            <img src="https://via.placeholder.com/150x150" data-demo-src="/images/profile-images/<?php echo $friend["user_image"]; ?>" data-user-popover="<?php echo $friend["user_no"]; ?>" alt="Friend image">
                                         </div>
-                                        <img src="https://via.placeholder.com/150x150" data-demo-src="/images/profile-images/<?php echo $friend["user_image"]; ?>" data-user-popover="<?php echo $friend["user_no"]; ?>" alt="Friend image">
-                                    </div>
-                                    <h3><?php echo $friend["user_fullname"]; ?></h3>
-                                    <p>From <?php echo ($friend["user_town"]=="N/A")? "Undisclosed": $friend["user_town"]; ?></p>
-                                </a>
-                            </div>
+                                        <h3><?php echo $friend["user_fullname"]; ?></h3>
+                                        <p>From <?php echo ($friend["user_town"] == "N/A") ? "Undisclosed" : $friend["user_town"]; ?></p>
+                                    </a>
+                                </div>
 
                             <?php } ?>
 
                             <!--Friend item-->
-<!--                            <div class="column is-3">-->
-<!--                                <a class="friend-item has-text-centered">-->
-<!--                                    <div class="avatar-wrap">-->
-<!--                                        <div class="circle"></div>-->
-<!--                                        <div class="chat-button">-->
-<!--                                            <i data-feather="message-circle"></i>-->
-<!--                                        </div>-->
-<!--                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/george.jpg" data-user-popover="18" alt="">-->
-<!--                                    </div>-->
-<!--                                    <h3>George A. Romero</h3>-->
-<!--                                    <p>From Los Angeles</p>-->
-<!--                                </a>-->
-<!--                            </div>-->
+                            <!--                            <div class="column is-3">-->
+                            <!--                                <a class="friend-item has-text-centered">-->
+                            <!--                                    <div class="avatar-wrap">-->
+                            <!--                                        <div class="circle"></div>-->
+                            <!--                                        <div class="chat-button">-->
+                            <!--                                            <i data-feather="message-circle"></i>-->
+                            <!--                                        </div>-->
+                            <!--                                        <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/george.jpg" data-user-popover="18" alt="">-->
+                            <!--                                    </div>-->
+                            <!--                                    <h3>George A. Romero</h3>-->
+                            <!--                                    <p>From Los Angeles</p>-->
+                            <!--                                </a>-->
+                            <!--                            </div>-->
                         </div>
                     </div>
 
@@ -186,7 +187,7 @@ $photoObj = new PhotoView();
             </div>
         </div>
     </div>
-        <?php include "includes/frontEnd/profile-modals.php"; ?>
+    <?php include "includes/frontEnd/profile-modals.php"; ?>
     </div>
 
     <div class="chat-wrapper">
@@ -1807,8 +1808,8 @@ $photoObj = new PhotoView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1847,8 +1848,8 @@ $photoObj = new PhotoView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body has-text-centered">
@@ -1870,7 +1871,7 @@ $photoObj = new PhotoView();
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="/assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="/assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->

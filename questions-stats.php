@@ -38,6 +38,7 @@ $activityObj = new ActivityView();
 ?>
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -61,11 +62,11 @@ $activityObj = new ActivityView();
     <div class="infraloader is-active"></div>
     <div class="app-overlay"></div>
 
-  <?php
-  include "includes/frontEnd/main-navbar.php";
-  $user = $userObj->getUser($_SESSION["user_id"]);
+    <?php
+    include "includes/frontEnd/main-navbar.php";
+    $user = $userObj->getUser($_SESSION["user_id"]);
 
-  ?>
+    ?>
     <div class="view-wrapper">
 
         <!-- /html/partials/pages/questions/questions-nav-menu.html -->
@@ -214,7 +215,7 @@ $activityObj = new ActivityView();
                     <div class="column is-3">
                         <!-- /html/partials/pages/questions/questions-menu.html -->
                         <ul class="questions-menu questions-menu-fixed">
-                            <li >
+                            <li>
                                 <a href="/questions/home">
                                     <i data-feather="home"></i>
                                     <span>Home</span>
@@ -2205,7 +2206,7 @@ $activityObj = new ActivityView();
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -2266,4 +2267,5 @@ $activityObj = new ActivityView();
 
 
 <!-- Mirrored from friendkit.cssninja.io/navbar-v1-questions-stats.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:59:22 GMT -->
+
 </html>

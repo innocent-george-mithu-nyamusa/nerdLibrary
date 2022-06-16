@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>  Error 404 | NerdLibrary </title>
+    <title> Error 404 | NerdLibrary </title>
     <link rel="icon" type="image/png" href="assets/img/logo/logo.png" />
 
     <!-- Fonts -->
@@ -45,7 +45,7 @@
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->

@@ -3,7 +3,9 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/navbar-v1-profile-minimal.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:52:41 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -393,10 +395,10 @@
                                         <img src="assets/img/products/2.svg" alt="" />
                                         <span class="item-meta">
                                             <span class="item-name">Cool Shirt</span>
-                                        <span class="meta-info">
+                                            <span class="meta-info">
                                                 <span class="item-price">$29.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
 
@@ -404,10 +406,10 @@
                                         <img src="assets/img/products/3.svg" alt="" />
                                         <span class="item-meta">
                                             <span class="item-name">Military Short</span>
-                                        <span class="meta-info">
+                                            <span class="meta-info">
                                                 <span class="item-price">$39.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
 
@@ -415,10 +417,10 @@
                                         <img src="assets/img/products/4.svg" alt="" />
                                         <span class="item-meta">
                                             <span class="item-name">Cool Backpack</span>
-                                        <span class="meta-info">
+                                            <span class="meta-info">
                                                 <span class="item-price">$125.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
                                 </ul>
@@ -443,7 +445,7 @@
                                             <span class="dark">
                                                 <i data-feather="moon"></i>
                                             </span>
-                                        <span class="light">
+                                            <span class="light">
                                                 <i data-feather="sun"></i>
                                             </span>
                                         </span>
@@ -4366,7 +4368,7 @@
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -4426,4 +4428,5 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/navbar-v1-profile-minimal.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:52:48 GMT -->
+
 </html>

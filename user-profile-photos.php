@@ -37,6 +37,7 @@ $activityObj = new ActivityView();
 
 ?>
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -65,7 +66,7 @@ $activityObj = new ActivityView();
 
     include "includes/frontEnd/main-navbar.php";
     $user = $userObj->getUser($_SESSION["user_id"]);
-    $allMyPhotos  = $photoObj->getPhotos($user[0]["user_id"])?? [];
+    $allMyPhotos  = $photoObj->getPhotos($user[0]["user_id"]) ?? [];
     $photoGroupsNumber = Utilities::getNumberOfGroupings($allMyPhotos, "photos");
 
     ?>
@@ -490,8 +491,8 @@ $activityObj = new ActivityView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                    <i data-feather="x"></i>
-                                </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -541,8 +542,8 @@ $activityObj = new ActivityView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                    <i data-feather="x"></i>
-                                </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -592,8 +593,8 @@ $activityObj = new ActivityView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                    <i data-feather="x"></i>
-                                </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <!-- Card body -->
@@ -1861,15 +1862,15 @@ $activityObj = new ActivityView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                    <i data-feather="x"></i>
-                                </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
                     <label class="profile-uploader-box" for="upload-profile-picture">
                         <span class="inner-content">
-                                    <img src="assets/img/illustrations/profile/add-profile.svg" alt="">
-                                    <span>Click here to <br>upload a profile picture</span>
+                            <img src="assets/img/illustrations/profile/add-profile.svg" alt="">
+                            <span>Click here to <br>upload a profile picture</span>
                         </span>
                         <input type="file" id="upload-profile-picture" accept="image/*">
                     </label>
@@ -1899,15 +1900,15 @@ $activityObj = new ActivityView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                    <i data-feather="x"></i>
-                                </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
                     <label class="cover-uploader-box" for="upload-cover-picture">
                         <span class="inner-content">
-                                    <img src="assets/img/illustrations/profile/add-cover.svg" alt="">
-                                    <span>Click here to <br>upload a cover image</span>
+                            <img src="assets/img/illustrations/profile/add-cover.svg" alt="">
+                            <span>Click here to <br>upload a cover image</span>
                         </span>
                         <input type="file" id="upload-cover-picture" accept="image/*">
                     </label>
@@ -2235,8 +2236,8 @@ $activityObj = new ActivityView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                    <i data-feather="x"></i>
-                                </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -2317,8 +2318,8 @@ $activityObj = new ActivityView();
                             <div id="actions" class="columns is-multiline no-mb">
                                 <div class="column is-12">
                                     <span class="button has-icon is-solid grey-button fileinput-button">
-                                                <i data-feather="plus"></i>
-                                            </span>
+                                        <i data-feather="plus"></i>
+                                    </span>
                                     <button type="submit" class="button start is-hidden">
                                         <span>Upload</span>
                                     </button>
@@ -2326,7 +2327,7 @@ $activityObj = new ActivityView();
                                         <span>Clear all</span>
                                     </button>
                                     <span class="file-count">
-                                                <span id="modal-uploader-file-count">0</span> file(s) selected
+                                        <span id="modal-uploader-file-count">0</span> file(s) selected
                                     </span>
                                 </div>
 
@@ -2351,7 +2352,7 @@ $activityObj = new ActivityView();
                                             <i class="mdi mdi-close"></i>
                                         </div>
                                         <div>
-                                            <span class="preview"><img src="https://via.placeholder.com/120x120" data-dz-thumbnail alt=""/></span>
+                                            <span class="preview"><img src="https://via.placeholder.com/120x120" data-dz-thumbnail alt="" /></span>
                                         </div>
                                         <div class="preview-body">
                                             <div class="item-meta">
@@ -4068,8 +4069,8 @@ $activityObj = new ActivityView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4107,8 +4108,8 @@ $activityObj = new ActivityView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body has-text-centered">
@@ -4129,7 +4130,7 @@ $activityObj = new ActivityView();
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="/assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="/assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -4190,4 +4191,5 @@ $activityObj = new ActivityView();
 
 
 <!-- Mirrored from friendkit.cssninja.io/user-profile-photos.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:57:08 GMT -->
+
 </html>

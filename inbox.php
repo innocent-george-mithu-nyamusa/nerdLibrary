@@ -3,7 +3,9 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/inbox.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:18 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -352,11 +354,11 @@
                         <div id="global-search" class="control">
                             <input id="tipue_drop_input" class="input is-rounded" type="text" placeholder="Search" required>
                             <span id="clear-search" class="reset-search">
-                                    <i data-feather="x"></i>
-                                </span>
+                                <i data-feather="x"></i>
+                            </span>
                             <span class="search-icon">
-                                    <i data-feather="search"></i>
-                                </span>
+                                <i data-feather="search"></i>
+                            </span>
 
                             <div id="tipue_drop_content" class="tipue-drop-content"></div>
                         </div>
@@ -391,33 +393,33 @@
                                     <li class="cart-row">
                                         <img src="assets/img/products/2.svg" alt="" />
                                         <span class="item-meta">
-                                                <span class="item-name">Cool Shirt</span>
-                                        <span class="meta-info">
-                                                    <span class="item-price">$29.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                            <span class="item-name">Cool Shirt</span>
+                                            <span class="meta-info">
+                                                <span class="item-price">$29.00</span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
 
                                     <li class="cart-row">
                                         <img src="assets/img/products/3.svg" alt="" />
                                         <span class="item-meta">
-                                                <span class="item-name">Military Short</span>
-                                        <span class="meta-info">
-                                                    <span class="item-price">$39.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                            <span class="item-name">Military Short</span>
+                                            <span class="meta-info">
+                                                <span class="item-price">$39.00</span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
 
                                     <li class="cart-row">
                                         <img src="assets/img/products/4.svg" alt="" />
                                         <span class="item-meta">
-                                                <span class="item-name">Cool Backpack</span>
-                                        <span class="meta-info">
-                                                    <span class="item-price">$125.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                            <span class="item-name">Cool Backpack</span>
+                                            <span class="meta-info">
+                                                <span class="item-price">$125.00</span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
                                 </ul>
@@ -439,12 +441,12 @@
                                     <label class="theme-toggle">
                                         <input type="checkbox">
                                         <span class="toggler">
-                                                <span class="dark">
-                                                    <i data-feather="moon"></i>
-                                                </span>
-                                        <span class="light">
-                                                    <i data-feather="sun"></i>
-                                                </span>
+                                            <span class="dark">
+                                                <i data-feather="moon"></i>
+                                            </span>
+                                            <span class="light">
+                                                <i data-feather="sun"></i>
+                                            </span>
                                         </span>
                                     </label>
                                 </div>
@@ -1050,11 +1052,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@Dan</a></small>
-                                                </span>
+                                                <small>From: <a>@Dan</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">oct 23 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -1073,11 +1075,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@Nelly</a></small>
-                                                </span>
+                                                <small>From: <a>@Nelly</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">oct 19 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -1096,11 +1098,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@Milly</a></small>
-                                                </span>
+                                                <small>From: <a>@Milly</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">oct 18 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -1119,11 +1121,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@Dan</a></small>
-                                                </span>
+                                                <small>From: <a>@Dan</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">oct 12 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -1143,11 +1145,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@David</a></small>
-                                                </span>
+                                                <small>From: <a>@David</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">oct 10 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -1167,11 +1169,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@Mike</a></small>
-                                                </span>
+                                                <small>From: <a>@Mike</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">oct 04 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -1191,11 +1193,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@Elise</a></small>
-                                                </span>
+                                                <small>From: <a>@Elise</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">sept 27 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -1215,11 +1217,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@Daniel</a></small>
-                                                </span>
+                                                <small>From: <a>@Daniel</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">sept 21 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -1239,11 +1241,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@Lana</a></small>
-                                                </span>
+                                                <small>From: <a>@Lana</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">sept 16 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -1262,11 +1264,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@Rolf</a></small>
-                                                </span>
+                                                <small>From: <a>@Rolf</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">sept 14 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -1285,11 +1287,11 @@
                                     <div class="card-content">
                                         <div class="msg-header">
                                             <span class="msg-from">
-                                                    <small>From: <a>@Dan</a></small>
-                                                </span>
+                                                <small>From: <a>@Dan</a></small>
+                                            </span>
                                             <span class="msg-attachment">
-                                                    <i data-feather="paperclip"></i>
-                                                </span>
+                                                <i data-feather="paperclip"></i>
+                                            </span>
                                             <span class="msg-timestamp">sept 07 2018</span>
                                         </div>
                                         <div class="msg-subject">
@@ -4132,8 +4134,8 @@
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -4162,7 +4164,7 @@
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -4223,4 +4225,5 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/inbox.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:19 GMT -->
+
 </html>

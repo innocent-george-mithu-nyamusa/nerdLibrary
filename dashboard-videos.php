@@ -3,7 +3,9 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/dashboard-videos.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:18 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -76,12 +78,12 @@
                     <label class="theme-toggle">
                         <input type="checkbox" />
                         <span class="toggler">
-                      <span class="dark">
-                        <i data-feather="moon"></i>
-                      </span>
-                        <span class="light">
-                        <i data-feather="sun"></i>
-                      </span>
+                            <span class="dark">
+                                <i data-feather="moon"></i>
+                            </span>
+                            <span class="light">
+                                <i data-feather="sun"></i>
+                            </span>
                         </span>
                     </label>
                     <div class="buttons">
@@ -523,7 +525,7 @@
 
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -583,4 +585,5 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/dashboard-videos.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:18 GMT -->
+
 </html>

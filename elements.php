@@ -3,7 +3,9 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/elements.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:23 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -393,10 +395,10 @@
                                         <img src="assets/img/products/2.svg" alt="" />
                                         <span class="item-meta">
                                             <span class="item-name">Cool Shirt</span>
-                                        <span class="meta-info">
+                                            <span class="meta-info">
                                                 <span class="item-price">$29.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
 
@@ -404,10 +406,10 @@
                                         <img src="assets/img/products/3.svg" alt="" />
                                         <span class="item-meta">
                                             <span class="item-name">Military Short</span>
-                                        <span class="meta-info">
+                                            <span class="meta-info">
                                                 <span class="item-price">$39.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
 
@@ -415,10 +417,10 @@
                                         <img src="assets/img/products/4.svg" alt="" />
                                         <span class="item-meta">
                                             <span class="item-name">Cool Backpack</span>
-                                        <span class="meta-info">
+                                            <span class="meta-info">
                                                 <span class="item-price">$125.00</span>
-                                        <span class="item-quantity">Qty: 01</span>
-                                        </span>
+                                                <span class="item-quantity">Qty: 01</span>
+                                            </span>
                                         </span>
                                     </li>
                                 </ul>
@@ -443,7 +445,7 @@
                                             <span class="dark">
                                                 <i data-feather="moon"></i>
                                             </span>
-                                        <span class="light">
+                                            <span class="light">
                                                 <i data-feather="sun"></i>
                                             </span>
                                         </span>
@@ -1139,15 +1141,15 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!--Simple--&#x3E;
-    &#x3C;a class=&#x22;button is-solid primary-button raised&#x22;&#x3E;Primary&#x3C;/a&#x3E;
-    &#x3C;!--Rounded--&#x3E;
-    &#x3C;a class=&#x22;button is-rounded&#x22;&#x3E;Rounded&#x3C;/a&#x3E;
-    &#x3C;!--Loading--&#x3E;
-    &#x3C;a class=&#x22;button is-loading&#x22;&#x3E;Simple&#x3C;/a&#x3E;
-    &#x3C;!--Loading--&#x3E;
-    &#x3C;a class=&#x22;button is-rounded is-loading&#x22;&#x3E;Rounded&#x3C;/a&#x3E;
-                            </code>
+                            &#x3C;!--Simple--&#x3E;
+                            &#x3C;a class=&#x22;button is-solid primary-button raised&#x22;&#x3E;Primary&#x3C;/a&#x3E;
+                            &#x3C;!--Rounded--&#x3E;
+                            &#x3C;a class=&#x22;button is-rounded&#x22;&#x3E;Rounded&#x3C;/a&#x3E;
+                            &#x3C;!--Loading--&#x3E;
+                            &#x3C;a class=&#x22;button is-loading&#x22;&#x3E;Simple&#x3C;/a&#x3E;
+                            &#x3C;!--Loading--&#x3E;
+                            &#x3C;a class=&#x22;button is-rounded is-loading&#x22;&#x3E;Rounded&#x3C;/a&#x3E;
+                        </code>
                     </figure>
                 </div>
 
@@ -1166,10 +1168,10 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!-- Solid Primary--&#x3E;
-    &#x3C;a class=&#x22;button is-solid primary-button&#x22;&#x3E;Solid&#x3C;/a&#x3E;
-    &#x3C;!--Solid Accent--&#x3E;
-    &#x3C;a class=&#x22;button is-rounded is-solid accent-button&#x22;&#x3E;Solid&#x3C;/a&#x3E;
+                            &#x3C;!-- Solid Primary--&#x3E;
+                            &#x3C;a class=&#x22;button is-solid primary-button&#x22;&#x3E;Solid&#x3C;/a&#x3E;
+                            &#x3C;!--Solid Accent--&#x3E;
+                            &#x3C;a class=&#x22;button is-rounded is-solid accent-button&#x22;&#x3E;Solid&#x3C;/a&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1192,10 +1194,10 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!-- Solid Primary Raised--&#x3E;
-    &#x3C;a class=&#x22;button is-solid primary-button raised&#x22;&#x3E;Raised&#x3C;/a&#x3E;
-    &#x3C;!--Solid Accent Raised--&#x3E;
-    &#x3C;a class=&#x22;button is-rounded is-solid accent-button raised&#x22;&#x3E;Raised&#x3C;/a&#x3E;
+                            &#x3C;!-- Solid Primary Raised--&#x3E;
+                            &#x3C;a class=&#x22;button is-solid primary-button raised&#x22;&#x3E;Raised&#x3C;/a&#x3E;
+                            &#x3C;!--Solid Accent Raised--&#x3E;
+                            &#x3C;a class=&#x22;button is-rounded is-solid accent-button raised&#x22;&#x3E;Raised&#x3C;/a&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1213,10 +1215,10 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!-- Phantom Primary--&#x3E;
-    &#x3C;a class=&#x22;button is-phantom primary-button&#x22;&#x3E;Raised&#x3C;/a&#x3E;
-    &#x3C;!--Phantom Accent--&#x3E;
-    &#x3C;a class=&#x22;button is-rounded is-phantom accent-button&#x22;&#x3E;Raised&#x3C;/a&#x3E;
+                            &#x3C;!-- Phantom Primary--&#x3E;
+                            &#x3C;a class=&#x22;button is-phantom primary-button&#x22;&#x3E;Raised&#x3C;/a&#x3E;
+                            &#x3C;!--Phantom Accent--&#x3E;
+                            &#x3C;a class=&#x22;button is-rounded is-phantom accent-button&#x22;&#x3E;Raised&#x3C;/a&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1234,10 +1236,10 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!-- Reversed Phantom Primary--&#x3E;
-    &#x3C;a class=&#x22;button is-phantom primary-button&#x22;&#x3E;Simple&#x3C;/a&#x3E;
-    &#x3C;!-- Reversed Phantom Accent--&#x3E;
-    &#x3C;a class=&#x22;button is-rounded is-phantom accent-button&#x22;&#x3E;Rounded&#x3C;/a&#x3E;
+                            &#x3C;!-- Reversed Phantom Primary--&#x3E;
+                            &#x3C;a class=&#x22;button is-phantom primary-button&#x22;&#x3E;Simple&#x3C;/a&#x3E;
+                            &#x3C;!-- Reversed Phantom Accent--&#x3E;
+                            &#x3C;a class=&#x22;button is-rounded is-phantom accent-button&#x22;&#x3E;Rounded&#x3C;/a&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1297,31 +1299,31 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!--Default--&#x3E;
-    &#x3C;label class=&#x22;f-switch&#x22;&#x3E;
-        &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;is-switch&#x22; checked&#x3E;
-        &#x3C;i&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/label&#x3E;
-    &#x3C;!--Primary--&#x3E;
-    &#x3C;label class=&#x22;f-switch is-primary&#x22;&#x3E;
-        &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;is-switch&#x22; checked&#x3E;
-        &#x3C;i&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/label&#x3E;
-    &#x3C;!--Accent--&#x3E;
-    &#x3C;label class=&#x22;f-switch is-accent&#x22;&#x3E;
-        &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;is-switch&#x22; checked&#x3E;
-        &#x3C;i&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/label&#x3E;
-    &#x3C;!--Red--&#x3E;
-    &#x3C;label class=&#x22;f-switch is-red&#x22;&#x3E;
-        &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;is-switch&#x22; checked&#x3E;
-        &#x3C;i&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/label&#x3E;
-    &#x3C;!--Blue--&#x3E;
-    &#x3C;label class=&#x22;f-switch is-blue&#x22;&#x3E;
-        &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;is-switch&#x22; checked&#x3E;
-        &#x3C;i&#x3E;&#x3C;/i&#x3E;
-    &#x3C;/label&#x3E;
+                            &#x3C;!--Default--&#x3E;
+                            &#x3C;label class=&#x22;f-switch&#x22;&#x3E;
+                            &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;is-switch&#x22; checked&#x3E;
+                            &#x3C;i&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/label&#x3E;
+                            &#x3C;!--Primary--&#x3E;
+                            &#x3C;label class=&#x22;f-switch is-primary&#x22;&#x3E;
+                            &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;is-switch&#x22; checked&#x3E;
+                            &#x3C;i&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/label&#x3E;
+                            &#x3C;!--Accent--&#x3E;
+                            &#x3C;label class=&#x22;f-switch is-accent&#x22;&#x3E;
+                            &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;is-switch&#x22; checked&#x3E;
+                            &#x3C;i&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/label&#x3E;
+                            &#x3C;!--Red--&#x3E;
+                            &#x3C;label class=&#x22;f-switch is-red&#x22;&#x3E;
+                            &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;is-switch&#x22; checked&#x3E;
+                            &#x3C;i&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/label&#x3E;
+                            &#x3C;!--Blue--&#x3E;
+                            &#x3C;label class=&#x22;f-switch is-blue&#x22;&#x3E;
+                            &#x3C;input type=&#x22;checkbox&#x22; class=&#x22;is-switch&#x22; checked&#x3E;
+                            &#x3C;i&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/label&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1337,7 +1339,7 @@
                                 <span class="dark">
                                     <i data-feather="moon"></i>
                                 </span>
-                            <span class="light">
+                                <span class="light">
                                     <i data-feather="sun"></i>
                                 </span>
                             </span>
@@ -1349,18 +1351,18 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!--Animated Switch--&#x3E;
-    &#x3C;label class=&#x22;animated-toggle&#x22;&#x3E;
-        &#x3C;input type=&#x22;checkbox&#x22;&#x3E;
-        &#x3C;span class=&#x22;toggler&#x22;&#x3E;
-            &#x3C;span class=&#x22;dark&#x22;&#x3E;
-                &#x3C;i data-feather=&#x22;moon&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/span&#x3E;
-            &#x3C;span class=&#x22;light&#x22;&#x3E;
-                &#x3C;i data-feather=&#x22;sun&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/span&#x3E;
-        &#x3C;/span&#x3E;
-    &#x3C;/label&#x3E;
+                            &#x3C;!--Animated Switch--&#x3E;
+                            &#x3C;label class=&#x22;animated-toggle&#x22;&#x3E;
+                            &#x3C;input type=&#x22;checkbox&#x22;&#x3E;
+                            &#x3C;span class=&#x22;toggler&#x22;&#x3E;
+                            &#x3C;span class=&#x22;dark&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;moon&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/span&#x3E;
+                            &#x3C;span class=&#x22;light&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;sun&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/span&#x3E;
+                            &#x3C;/span&#x3E;
+                            &#x3C;/label&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1421,24 +1423,24 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!--Material Radio--&#x3E;
-    &#x3C;label class=&#x22;material-radio&#x22;&#x3E;
-        &#x3C;input type=&#x22;radio&#x22; name=&#x22;group-demo1&#x22; checked&#x3E;
-        &#x3C;span class=&#x22;dot&#x22;&#x3E;&#x3C;/span&#x3E;
-        &#x3C;span class=&#x22;radio-label&#x22;&#x3E;Choice 1&#x3C;/span&#x3E;
-    &#x3C;/label&#x3E;
-    &#x3C;!--Material Radio--&#x3E;
-    &#x3C;label class=&#x22;material-radio is-accent&#x22;&#x3E;
-        &#x3C;input type=&#x22;radio&#x22; name=&#x22;group-demo1&#x22;&#x3E;
-        &#x3C;span class=&#x22;dot&#x22;&#x3E;&#x3C;/span&#x3E;
-        &#x3C;span class=&#x22;radio-label&#x22;&#x3E;Choice 2&#x3C;/span&#x3E;
-    &#x3C;/label&#x3E;
-    &#x3C;!--Material Radio--&#x3E;
-    &#x3C;label class=&#x22;material-radio is-green&#x22;&#x3E;
-        &#x3C;input type=&#x22;radio&#x22; name=&#x22;group-demo1&#x22;&#x3E;
-        &#x3C;span class=&#x22;dot&#x22;&#x3E;&#x3C;/span&#x3E;
-        &#x3C;span class=&#x22;radio-label&#x22;&#x3E;Choice 3&#x3C;/span&#x3E;
-    &#x3C;/label&#x3E;
+                            &#x3C;!--Material Radio--&#x3E;
+                            &#x3C;label class=&#x22;material-radio&#x22;&#x3E;
+                            &#x3C;input type=&#x22;radio&#x22; name=&#x22;group-demo1&#x22; checked&#x3E;
+                            &#x3C;span class=&#x22;dot&#x22;&#x3E;&#x3C;/span&#x3E;
+                            &#x3C;span class=&#x22;radio-label&#x22;&#x3E;Choice 1&#x3C;/span&#x3E;
+                            &#x3C;/label&#x3E;
+                            &#x3C;!--Material Radio--&#x3E;
+                            &#x3C;label class=&#x22;material-radio is-accent&#x22;&#x3E;
+                            &#x3C;input type=&#x22;radio&#x22; name=&#x22;group-demo1&#x22;&#x3E;
+                            &#x3C;span class=&#x22;dot&#x22;&#x3E;&#x3C;/span&#x3E;
+                            &#x3C;span class=&#x22;radio-label&#x22;&#x3E;Choice 2&#x3C;/span&#x3E;
+                            &#x3C;/label&#x3E;
+                            &#x3C;!--Material Radio--&#x3E;
+                            &#x3C;label class=&#x22;material-radio is-green&#x22;&#x3E;
+                            &#x3C;input type=&#x22;radio&#x22; name=&#x22;group-demo1&#x22;&#x3E;
+                            &#x3C;span class=&#x22;dot&#x22;&#x3E;&#x3C;/span&#x3E;
+                            &#x3C;span class=&#x22;radio-label&#x22;&#x3E;Choice 3&#x3C;/span&#x3E;
+                            &#x3C;/label&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1514,20 +1516,20 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!--Round Checkbox small--&#x3E;
-    &#x3C;div class=&#x22;round-checkbox is-small is-red&#x22;&#x3E;
-        &#x3C;div&#x3E;
-            &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox-group-7&#x22; checked&#x3E;
-            &#x3C;label for=&#x22;checkbox-group-7&#x22;&#x3E;&#x3C;/label&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;!--Round Checkbox--&#x3E;
-    &#x3C;div class=&#x22;round-checkbox is-red&#x22;&#x3E;
-        &#x3C;div&#x3E;
-            &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox-group-8&#x22; checked&#x3E;
-            &#x3C;label for=&#x22;checkbox-group-8&#x22;&#x3E;&#x3C;/label&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
+                            &#x3C;!--Round Checkbox small--&#x3E;
+                            &#x3C;div class=&#x22;round-checkbox is-small is-red&#x22;&#x3E;
+                            &#x3C;div&#x3E;
+                            &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox-group-7&#x22; checked&#x3E;
+                            &#x3C;label for=&#x22;checkbox-group-7&#x22;&#x3E;&#x3C;/label&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;!--Round Checkbox--&#x3E;
+                            &#x3C;div class=&#x22;round-checkbox is-red&#x22;&#x3E;
+                            &#x3C;div&#x3E;
+                            &#x3C;input type=&#x22;checkbox&#x22; id=&#x22;checkbox-group-8&#x22; checked&#x3E;
+                            &#x3C;label for=&#x22;checkbox-group-8&#x22;&#x3E;&#x3C;/label&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1590,16 +1592,16 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!--Basic Checkbox--&#x3E;
-    &#x3C;div class=&#x22;basic-checkbox&#x22;&#x3E;
-        &#x3C;input class=&#x22;styled-checkbox&#x22; id=&#x22;styled-checkbox-2&#x22; type=&#x22;checkbox&#x22; checked&#x3E;
-        &#x3C;label for=&#x22;styled-checkbox-2&#x22;&#x3E;&#x3C;/label&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;!--Basic Checkbox--&#x3E;
-    &#x3C;div class=&#x22;basic-checkbox is-accent&#x22;&#x3E;
-        &#x3C;input class=&#x22;styled-checkbox&#x22; id=&#x22;styled-checkbox-3&#x22; type=&#x22;checkbox&#x22; checked&#x3E;
-        &#x3C;label for=&#x22;styled-checkbox-3&#x22;&#x3E;&#x3C;/label&#x3E;
-    &#x3C;/div&#x3E;
+                            &#x3C;!--Basic Checkbox--&#x3E;
+                            &#x3C;div class=&#x22;basic-checkbox&#x22;&#x3E;
+                            &#x3C;input class=&#x22;styled-checkbox&#x22; id=&#x22;styled-checkbox-2&#x22; type=&#x22;checkbox&#x22; checked&#x3E;
+                            &#x3C;label for=&#x22;styled-checkbox-2&#x22;&#x3E;&#x3C;/label&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;!--Basic Checkbox--&#x3E;
+                            &#x3C;div class=&#x22;basic-checkbox is-accent&#x22;&#x3E;
+                            &#x3C;input class=&#x22;styled-checkbox&#x22; id=&#x22;styled-checkbox-3&#x22; type=&#x22;checkbox&#x22; checked&#x3E;
+                            &#x3C;label for=&#x22;styled-checkbox-3&#x22;&#x3E;&#x3C;/label&#x3E;
+                            &#x3C;/div&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1647,34 +1649,34 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!--Simple Input--&#x3E;
-    &#x3C;div class=&#x22;field&#x22;&#x3E;
-        &#x3C;label&#x3E;Simple Input&#x3C;/label&#x3E;
-        &#x3C;div class=&#x22;control&#x22;&#x3E;
-            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22;&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;!--Loading Input--&#x3E;
-    &#x3C;div class=&#x22;field&#x22;&#x3E;
-        &#x3C;label&#x3E;Loading Input&#x3C;/label&#x3E;
-        &#x3C;div class=&#x22;control&#x22;&#x3E;
-            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22;&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;!--Rounded Input--&#x3E;
-    &#x3C;div class=&#x22;field&#x22;&#x3E;
-        &#x3C;label&#x3E;Rounded Input&#x3C;/label&#x3E;
-        &#x3C;div class=&#x22;control&#x22;&#x3E;
-            &#x3C;input type=&#x22;text&#x22; class=&#x22;input is-rounded&#x22;&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;!--Disabled Input--&#x3E;
-    &#x3C;div class=&#x22;field&#x22;&#x3E;
-        &#x3C;label&#x3E;Disabled Input&#x3C;/label&#x3E;
-        &#x3C;div class=&#x22;control&#x22;&#x3E;
-            &#x3C;input type=&#x22;text&#x22; class=&#x22;input is-rounded&#x22; disabled&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
+                            &#x3C;!--Simple Input--&#x3E;
+                            &#x3C;div class=&#x22;field&#x22;&#x3E;
+                            &#x3C;label&#x3E;Simple Input&#x3C;/label&#x3E;
+                            &#x3C;div class=&#x22;control&#x22;&#x3E;
+                            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;!--Loading Input--&#x3E;
+                            &#x3C;div class=&#x22;field&#x22;&#x3E;
+                            &#x3C;label&#x3E;Loading Input&#x3C;/label&#x3E;
+                            &#x3C;div class=&#x22;control&#x22;&#x3E;
+                            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;!--Rounded Input--&#x3E;
+                            &#x3C;div class=&#x22;field&#x22;&#x3E;
+                            &#x3C;label&#x3E;Rounded Input&#x3C;/label&#x3E;
+                            &#x3C;div class=&#x22;control&#x22;&#x3E;
+                            &#x3C;input type=&#x22;text&#x22; class=&#x22;input is-rounded&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;!--Disabled Input--&#x3E;
+                            &#x3C;div class=&#x22;field&#x22;&#x3E;
+                            &#x3C;label&#x3E;Disabled Input&#x3C;/label&#x3E;
+                            &#x3C;div class=&#x22;control&#x22;&#x3E;
+                            &#x3C;input type=&#x22;text&#x22; class=&#x22;input is-rounded&#x22; disabled&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1724,36 +1726,36 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!--Simple Input--&#x3E;
-    &#x3C;div class=&#x22;field&#x22;&#x3E;
-        &#x3C;label&#x3E;Icon Input&#x3C;/label&#x3E;
-        &#x3C;div class=&#x22;control has-icon&#x22;&#x3E;
-            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22;&#x3E;
-            &#x3C;div class=&#x22;form-icon&#x22;&#x3E;
-                &#x3C;i data-feather=&#x22;search&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;!--Loading Input--&#x3E;
-    &#x3C;div class=&#x22;field&#x22;&#x3E;
-        &#x3C;label&#x3E;Icon Input&#x3C;/label&#x3E;
-        &#x3C;div class=&#x22;control has-icon&#x22;&#x3E;
-            &#x3C;input type=&#x22;text&#x22; class=&#x22;input is-rounded&#x22;&#x3E;
-            &#x3C;div class=&#x22;form-icon&#x22;&#x3E;
-                &#x3C;i data-feather=&#x22;search&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;!--Disabled Input--&#x3E;
-    &#x3C;div class=&#x22;field&#x22;&#x3E;
-        &#x3C;label&#x3E;Icon Input&#x3C;/label&#x3E;
-        &#x3C;div class=&#x22;control has-icon&#x22;&#x3E;
-            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22; disabled&#x3E;
-            &#x3C;div class=&#x22;form-icon&#x22;&#x3E;
-                &#x3C;i data-feather=&#x22;search&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
+                            &#x3C;!--Simple Input--&#x3E;
+                            &#x3C;div class=&#x22;field&#x22;&#x3E;
+                            &#x3C;label&#x3E;Icon Input&#x3C;/label&#x3E;
+                            &#x3C;div class=&#x22;control has-icon&#x22;&#x3E;
+                            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22;&#x3E;
+                            &#x3C;div class=&#x22;form-icon&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;search&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;!--Loading Input--&#x3E;
+                            &#x3C;div class=&#x22;field&#x22;&#x3E;
+                            &#x3C;label&#x3E;Icon Input&#x3C;/label&#x3E;
+                            &#x3C;div class=&#x22;control has-icon&#x22;&#x3E;
+                            &#x3C;input type=&#x22;text&#x22; class=&#x22;input is-rounded&#x22;&#x3E;
+                            &#x3C;div class=&#x22;form-icon&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;search&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;!--Disabled Input--&#x3E;
+                            &#x3C;div class=&#x22;field&#x22;&#x3E;
+                            &#x3C;label&#x3E;Icon Input&#x3C;/label&#x3E;
+                            &#x3C;div class=&#x22;control has-icon&#x22;&#x3E;
+                            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22; disabled&#x3E;
+                            &#x3C;div class=&#x22;form-icon&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;search&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1812,32 +1814,32 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!--Success Validation Input--&#x3E;
-    &#x3C;div class=&#x22;field&#x22;&#x3E;
-        &#x3C;label&#x3E;Email&#x3C;/label&#x3E;
-        &#x3C;div class=&#x22;control has-validation has-success&#x22;&#x3E;
-            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22; /&#x3E;
-            &#x3C;div class=&#x22;error-icon&#x22;&#x3E;
-                &#x3C;i data-feather=&#x22;x&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-            &#x3C;div class=&#x22;success-icon&#x22;&#x3E;
-                &#x3C;i data-feather=&#x22;check&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
-    &#x3C;!--Error Validation Input--&#x3E;
-    &#x3C;div class=&#x22;field&#x22;&#x3E;
-        &#x3C;label&#x3E;Email&#x3C;/label&#x3E;
-        &#x3C;div class=&#x22;control has-validation has-error&#x22;&#x3E;
-            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22; /&#x3E;
-            &#x3C;div class=&#x22;error-icon&#x22;&#x3E;
-                &#x3C;i data-feather=&#x22;x&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-            &#x3C;div class=&#x22;success-icon&#x22;&#x3E;
-                &#x3C;i data-feather=&#x22;check&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
+                            &#x3C;!--Success Validation Input--&#x3E;
+                            &#x3C;div class=&#x22;field&#x22;&#x3E;
+                            &#x3C;label&#x3E;Email&#x3C;/label&#x3E;
+                            &#x3C;div class=&#x22;control has-validation has-success&#x22;&#x3E;
+                            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22; /&#x3E;
+                            &#x3C;div class=&#x22;error-icon&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;x&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;success-icon&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;check&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;!--Error Validation Input--&#x3E;
+                            &#x3C;div class=&#x22;field&#x22;&#x3E;
+                            &#x3C;label&#x3E;Email&#x3C;/label&#x3E;
+                            &#x3C;div class=&#x22;control has-validation has-error&#x22;&#x3E;
+                            &#x3C;input type=&#x22;text&#x22; class=&#x22;input&#x22; /&#x3E;
+                            &#x3C;div class=&#x22;error-icon&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;x&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;success-icon&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;check&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -1933,46 +1935,46 @@
                 <div class="code-block">
                     <figure class="highlight highlight-block">
                         <code class="html code-highlight">
-    &#x3C;!--Basic Dropdown--&#x3E;
-    &#x3C;div class=&#x22;dropdown is-spaced is-accent dropdown-trigger&#x22;&#x3E;
-        &#x3C;div&#x3E;
-            &#x3C;div class=&#x22;button&#x22;&#x3E;
-                &#x3C;i data-feather=&#x22;more-vertical&#x22;&#x3E;&#x3C;/i&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-        &#x3C;div class=&#x22;dropdown-menu&#x22; role=&#x22;menu&#x22;&#x3E;
-            &#x3C;div class=&#x22;dropdown-content&#x22;&#x3E;
-                &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item&#x22;&#x3E;
-                    &#x3C;div class=&#x22;media&#x22;&#x3E;
-                        &#x3C;i data-feather=&#x22;life-buoy&#x22;&#x3E;&#x3C;/i&#x3E;
-                        &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                            &#x3C;!--Basic Dropdown--&#x3E;
+                            &#x3C;div class=&#x22;dropdown is-spaced is-accent dropdown-trigger&#x22;&#x3E;
+                            &#x3C;div&#x3E;
+                            &#x3C;div class=&#x22;button&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;more-vertical&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;div class=&#x22;dropdown-menu&#x22; role=&#x22;menu&#x22;&#x3E;
+                            &#x3C;div class=&#x22;dropdown-content&#x22;&#x3E;
+                            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item&#x22;&#x3E;
+                            &#x3C;div class=&#x22;media&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;life-buoy&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
                             &#x3C;h3&#x3E;Help Center&#x3C;/h3&#x3E;
                             &#x3C;small&#x3E;Access user guides and FAQs.&#x3C;/small&#x3E;
-                        &#x3C;/div&#x3E;
-                    &#x3C;/div&#x3E;
-                &#x3C;/a&#x3E;
-                &#x3C;a class=&#x22;dropdown-item&#x22;&#x3E;
-                    &#x3C;div class=&#x22;media&#x22;&#x3E;
-                        &#x3C;i data-feather=&#x22;headphones&#x22;&#x3E;&#x3C;/i&#x3E;
-                        &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/a&#x3E;
+                            &#x3C;a class=&#x22;dropdown-item&#x22;&#x3E;
+                            &#x3C;div class=&#x22;media&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;headphones&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
                             &#x3C;h3&#x3E;Talk&#x3C;/h3&#x3E;
                             &#x3C;small&#x3E;Call the support team.&#x3C;/small&#x3E;
-                        &#x3C;/div&#x3E;
-                    &#x3C;/div&#x3E;
-                &#x3C;/a&#x3E;
-                &#x3C;hr class=&#x22;dropdown-divider&#x22;&#x3E;
-                &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item&#x22;&#x3E;
-                    &#x3C;div class=&#x22;media&#x22;&#x3E;
-                        &#x3C;i data-feather=&#x22;x&#x22;&#x3E;&#x3C;/i&#x3E;
-                        &#x3C;div class=&#x22;media-content&#x22;&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/a&#x3E;
+                            &#x3C;hr class=&#x22;dropdown-divider&#x22;&#x3E;
+                            &#x3C;a href=&#x22;#&#x22; class=&#x22;dropdown-item&#x22;&#x3E;
+                            &#x3C;div class=&#x22;media&#x22;&#x3E;
+                            &#x3C;i data-feather=&#x22;x&#x22;&#x3E;&#x3C;/i&#x3E;
+                            &#x3C;div class=&#x22;media-content&#x22;&#x3E;
                             &#x3C;h3&#x3E;Hide&#x3C;/h3&#x3E;
                             &#x3C;small&#x3E;I don&#x27;t want to see this stuff anymore.&#x3C;/small&#x3E;
-                        &#x3C;/div&#x3E;
-                    &#x3C;/div&#x3E;
-                &#x3C;/a&#x3E;
-            &#x3C;/div&#x3E;
-        &#x3C;/div&#x3E;
-    &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/a&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
+                            &#x3C;/div&#x3E;
                         </code>
                     </figure>
                 </div>
@@ -2078,8 +2080,7 @@
                     <div class="ui-elements">
                         <div class="buttons">
                             <span class="morphing-btn-wrap">
-                                <a data-morphing="" id="morphing" data-src="#morphing-content"
-                                   href="javascript:" class="button is-solid primary-button raised is-rounded morphing-btn">
+                                <a data-morphing="" id="morphing" data-src="#morphing-content" href="javascript:" class="button is-solid primary-button raised is-rounded morphing-btn">
                                     Morph Button
                                 </a>
                             </span>
@@ -2610,7 +2611,7 @@
                                             <i class="mdi mdi-close"></i>
                                         </div>
                                         <div>
-                                            <span class="preview"><img src="https://via.placeholder.com/120x120" data-dz-thumbnail alt=""/></span>
+                                            <span class="preview"><img src="https://via.placeholder.com/120x120" data-dz-thumbnail alt="" /></span>
                                         </div>
                                         <div class="preview-body">
                                             <div class="item-meta">
@@ -2717,8 +2718,7 @@
                     <div class="dropdown is-primary share-dropdown">
                         <div>
                             <div class="button">
-                                <i class="mdi mdi-format-float-left"></i> <span>Share in your feed</span> <i
-                                    data-feather="chevron-down"></i>
+                                <i class="mdi mdi-format-float-left"></i> <span>Share in your feed</span> <i data-feather="chevron-down"></i>
                             </div>
                         </div>
                         <div class="dropdown-menu" role="menu">
@@ -2806,8 +2806,7 @@
                                 <div class="dropdown is-accent page-dropdown">
                                     <div>
                                         <div class="button page-selector">
-                                            <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/hanzo.svg" alt=""> <span>Css Ninja</span> <i
-                                                data-feather="chevron-down"></i>
+                                            <img src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/hanzo.svg" alt=""> <span>Css Ninja</span> <i data-feather="chevron-down"></i>
                                         </div>
                                     </div>
                                     <div class="dropdown-menu" role="menu">
@@ -4905,7 +4904,7 @@
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -4967,4 +4966,5 @@
 
 
 <!-- Mirrored from friendkit.cssninja.io/elements.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 22:00:25 GMT -->
+
 </html>

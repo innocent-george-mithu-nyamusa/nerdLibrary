@@ -38,6 +38,7 @@ $notificationObj = new UserNotificationView();
 ?>
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -2302,7 +2303,7 @@ $notificationObj = new UserNotificationView();
     <?php include "includes/frontEnd/explore-menu.php"; ?>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -2363,4 +2364,5 @@ $notificationObj = new UserNotificationView();
 
 
 <!-- Mirrored from friendkit.cssninja.io/navbar-v1-news.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:59:32 GMT -->
+
 </html>

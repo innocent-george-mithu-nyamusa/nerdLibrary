@@ -30,6 +30,7 @@ $photoObj = new PhotoView();
 ?>
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -186,39 +187,39 @@ $photoObj = new PhotoView();
                                         <ul>
                                             <li>
                                                 <span class="item-icon">
-                                                        <i class="mdi mdi-chevron-right"></i>
-                                                    </span>
+                                                    <i class="mdi mdi-chevron-right"></i>
+                                                </span>
                                                 <span class="item-name">Free</span>
                                                 <span class="checkmark">
-                                                        <i data-feather="check"></i>
-                                                    </span>
+                                                    <i data-feather="check"></i>
+                                                </span>
                                             </li>
                                             <li>
                                                 <span class="item-icon">
-                                                        <i class="mdi mdi-chevron-right"></i>
-                                                    </span>
+                                                    <i class="mdi mdi-chevron-right"></i>
+                                                </span>
                                                 <span class="item-name">$0 - $25</span>
                                                 <span class="checkmark">
-                                                        <i data-feather="check"></i>
-                                                    </span>
+                                                    <i data-feather="check"></i>
+                                                </span>
                                             </li>
                                             <li>
                                                 <span class="item-icon">
-                                                        <i class="mdi mdi-chevron-right"></i>
-                                                    </span>
+                                                    <i class="mdi mdi-chevron-right"></i>
+                                                </span>
                                                 <span class="item-name">$26 - $100</span>
                                                 <span class="checkmark">
-                                                        <i data-feather="check"></i>
-                                                    </span>
+                                                    <i data-feather="check"></i>
+                                                </span>
                                             </li>
                                             <li>
                                                 <span class="item-icon">
-                                                        <i class="mdi mdi-chevron-right"></i>
-                                                    </span>
+                                                    <i class="mdi mdi-chevron-right"></i>
+                                                </span>
                                                 <span class="item-name">$100 +</span>
                                                 <span class="checkmark">
-                                                        <i data-feather="check"></i>
-                                                    </span>
+                                                    <i data-feather="check"></i>
+                                                </span>
                                             </li>
                                         </ul>
                                     </div>
@@ -242,21 +243,21 @@ $photoObj = new PhotoView();
                                         <ul>
                                             <li>
                                                 <span class="item-icon">
-                                                        <i class="mdi mdi-sort-ascending"></i>
-                                                    </span>
+                                                    <i class="mdi mdi-sort-ascending"></i>
+                                                </span>
                                                 <span class="item-name">Ascending</span>
                                                 <span class="checkmark">
-                                                        <i data-feather="check"></i>
-                                                    </span>
+                                                    <i data-feather="check"></i>
+                                                </span>
                                             </li>
                                             <li>
                                                 <span class="item-icon">
-                                                        <i class="mdi mdi-sort-descending"></i>
-                                                    </span>
+                                                    <i class="mdi mdi-sort-descending"></i>
+                                                </span>
                                                 <span class="item-name">Descending</span>
                                                 <span class="checkmark">
-                                                        <i data-feather="check"></i>
-                                                    </span>
+                                                    <i data-feather="check"></i>
+                                                </span>
                                             </li>
                                         </ul>
                                     </div>
@@ -280,30 +281,30 @@ $photoObj = new PhotoView();
                                         <ul>
                                             <li>
                                                 <span class="item-icon">
-                                                        <i class="mdi mdi-comment-search-outline"></i>
-                                                    </span>
+                                                    <i class="mdi mdi-comment-search-outline"></i>
+                                                </span>
                                                 <span class="item-name">Popular</span>
                                                 <span class="checkmark">
-                                                        <i data-feather="check"></i>
-                                                    </span>
+                                                    <i data-feather="check"></i>
+                                                </span>
                                             </li>
                                             <li>
                                                 <span class="item-icon">
-                                                        <i class="mdi mdi-creation"></i>
-                                                    </span>
+                                                    <i class="mdi mdi-creation"></i>
+                                                </span>
                                                 <span class="item-name">Best Sellers</span>
                                                 <span class="checkmark">
-                                                        <i data-feather="check"></i>
-                                                    </span>
+                                                    <i data-feather="check"></i>
+                                                </span>
                                             </li>
                                             <li>
                                                 <span class="item-icon">
-                                                        <i class="mdi mdi-comment-eye-outline"></i>
-                                                    </span>
+                                                    <i class="mdi mdi-comment-eye-outline"></i>
+                                                </span>
                                                 <span class="item-name">On Sale</span>
                                                 <span class="checkmark">
-                                                        <i data-feather="check"></i>
-                                                    </span>
+                                                    <i data-feather="check"></i>
+                                                </span>
                                             </li>
                                         </ul>
                                     </div>
@@ -3219,8 +3220,8 @@ $photoObj = new PhotoView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -3260,8 +3261,8 @@ $photoObj = new PhotoView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body has-text-centered">
@@ -3282,7 +3283,7 @@ $photoObj = new PhotoView();
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -3343,4 +3344,5 @@ $photoObj = new PhotoView();
 
 
 <!-- Mirrored from friendkit.cssninja.io/shop.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:57:52 GMT -->
+
 </html>

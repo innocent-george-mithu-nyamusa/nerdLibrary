@@ -30,14 +30,14 @@ $activityObj = new ActivityView();
 
 
 
-if($utility::isLoggedIn()) {
+if ($utility::isLoggedIn()) {
     header("Location: index.php");
 }
 
 $allSeries = $seriesObj->allSeries();
 
-if(empty($allSeries)) {
-//    if there are no course series to show , go back to the homepage
+if (empty($allSeries)) {
+    //    if there are no course series to show , go back to the homepage
     header("Location: index.php");
 }
 
@@ -45,6 +45,7 @@ if(empty($allSeries)) {
 ?>
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -85,7 +86,7 @@ if(empty($allSeries)) {
                         <h2>All Courses</h2>
                         <div class="header-actions">
                             <div class="buttons">
-<!--                                <a href="#" class="button is-solid accent-button raised">New Group</a>-->
+                                <!--                                <a href="#" class="button is-solid accent-button raised">New Group</a>-->
                             </div>
                         </div>
                     </div>
@@ -93,45 +94,45 @@ if(empty($allSeries)) {
 
                 <div class="columns is-multiline">
                     <!--Group-->
-                <?php
+                    <?php
 
-                foreach ($allSeries as $series) {
+                    foreach ($allSeries as $series) {
 
-                    $category = $categoryObj->getCategory($series["series_category_id"]);
-                    $students = $enrollmentObj->getNumberOfStudentsForCourse($series["series_id"], $_SESSION["user_id"]);
-                    $lecturer = ($userObj->getUser($series["series_owner"]))[0];
-                    $seriesComments = $commentsObj->getNumberOfSeriesComments($series["series_id"]);
+                        $category = $categoryObj->getCategory($series["series_category_id"]);
+                        $students = $enrollmentObj->getNumberOfStudentsForCourse($series["series_id"], $_SESSION["user_id"]);
+                        $lecturer = ($userObj->getUser($series["series_owner"]))[0];
+                        $seriesComments = $commentsObj->getNumberOfSeriesComments($series["series_id"]);
                     ?>
 
-                    <div class="column is-3">
-                        <article class="group-box">
-                            <div class="box-info-hover">
-                                <i data-feather="heart"></i>
-                                <div class="box-clock-info">
-                                    <i data-feather="message-circle" class="box-clock"></i>
-                                    <span class="box-time">
-                                        <?php echo $seriesComments ?> comments
-                                    </span>
+                        <div class="column is-3">
+                            <article class="group-box">
+                                <div class="box-info-hover">
+                                    <i data-feather="heart"></i>
+                                    <div class="box-clock-info">
+                                        <i data-feather="message-circle" class="box-clock"></i>
+                                        <span class="box-time">
+                                            <?php echo $seriesComments ?> comments
+                                        </span>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="box-img has-background-image" data-background="https://via.placeholder.com/940x650" data-demo-background="images/series/<?php echo $series['series_image']; ?>"></div>
-                            <a href="course-track/<?php echo $series["series_id"]; ?>" class="box-link">
-                                <div class="box-img--hover has-background-image" data-background="https://via.placeholder.com/940x650" data-demo-background="images/series/<?php echo $series['series_image']; ?>"></div>
-                            </a>
-                            <div class="box-info">
-                                <span class="box-category"><?php echo $category["category_name"]; ?></span>
-                                <h3 class="box-title">
-                                    <?php echo $series["series_name"]; ?>
-                                </h3>
-                                <span class="box-members">
+                                <div class="box-img has-background-image" data-background="https://via.placeholder.com/940x650" data-demo-background="images/series/<?php echo $series['series_image']; ?>"></div>
+                                <a href="course-track/<?php echo $series["series_id"]; ?>" class="box-link">
+                                    <div class="box-img--hover has-background-image" data-background="https://via.placeholder.com/940x650" data-demo-background="images/series/<?php echo $series['series_image']; ?>"></div>
+                                </a>
+                                <div class="box-info">
+                                    <span class="box-category"><?php echo $category["category_name"]; ?></span>
+                                    <h3 class="box-title">
+                                        <?php echo $series["series_name"]; ?>
+                                    </h3>
+                                    <span class="box-members">
                                         <a href="#"><?php echo $students; ?> Students</a>
                                         <div class="members-preview">
                                             <img src="https://via.placeholder.com/150x150" data-demo-src="images/profile-images/<?php echo $lecturer['user_image']; ?>" data-user-popover="<?php echo $lecturer['user_no']; ?>" alt="">
                                         </div>
-                                </span>
-                            </div>
-                        </article>
-                    </div>
+                                    </span>
+                                </div>
+                            </article>
+                        </div>
 
                     <?php } ?>
 
@@ -1765,8 +1766,8 @@ if(empty($allSeries)) {
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -1804,8 +1805,8 @@ if(empty($allSeries)) {
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body has-text-centered">
@@ -1826,7 +1827,7 @@ if(empty($allSeries)) {
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="/assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="/assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -1886,4 +1887,5 @@ if(empty($allSeries)) {
 
 
 <!-- Mirrored from friendkit.cssninja.io/explore.php by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:52:41 GMT -->
+
 </html>

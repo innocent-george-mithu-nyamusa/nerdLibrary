@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
+
 use Classes\ActivityView;
 use Classes\CategoryView;
 use Classes\CommentView;
@@ -29,6 +30,7 @@ $activityObj = new ActivityView();
 
 
 <meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -66,61 +68,61 @@ $activityObj = new ActivityView();
                     <!--Event Link-->
                     <a href="#event-1" data-event-id="event-1" class="scroll-link is-active">
                         <span class="date-block">
-                                <i data-feather="calendar"></i>
-                                <span class="month">May 5th</span>
+                            <i data-feather="calendar"></i>
+                            <span class="month">May 5th</span>
                         </span>
                         <span class="meta-block">
-                                <span class="time">at 08:00 pm</span>
+                            <span class="time">at 08:00 pm</span>
                         </span>
                     </a>
                     <!--Event Link-->
                     <a href="#event-2" data-event-id="event-2" class="scroll-link">
                         <span class="date-block">
-                                <i data-feather="calendar"></i>
-                                <span class="month">May 8th</span>
+                            <i data-feather="calendar"></i>
+                            <span class="month">May 8th</span>
                         </span>
                         <span class="meta-block">
-                                <span class="time">at 09:30 am</span>
+                            <span class="time">at 09:30 am</span>
                         </span>
                     </a>
                     <!--Event Link-->
                     <a href="#event-3" data-event-id="event-3" class="scroll-link">
                         <span class="date-block">
-                                <i data-feather="calendar"></i>
-                                <span class="month">May 10th</span>
+                            <i data-feather="calendar"></i>
+                            <span class="month">May 10th</span>
                         </span>
                         <span class="meta-block">
-                                <span class="time">at 10:45 am</span>
+                            <span class="time">at 10:45 am</span>
                         </span>
                     </a>
                     <!--Event Link-->
                     <a href="#event-4" data-event-id="event-4" class="scroll-link">
                         <span class="date-block">
-                                <i data-feather="calendar"></i>
-                                <span class="month">May 23rd</span>
+                            <i data-feather="calendar"></i>
+                            <span class="month">May 23rd</span>
                         </span>
                         <span class="meta-block">
-                                <span class="time">at 04:00 pm</span>
+                            <span class="time">at 04:00 pm</span>
                         </span>
                     </a>
                     <!--Event Link-->
                     <a href="#event-5" data-event-id="event-5" class="scroll-link">
                         <span class="date-block">
-                                <i data-feather="calendar"></i>
-                                <span class="month">Jun 3rd</span>
+                            <i data-feather="calendar"></i>
+                            <span class="month">Jun 3rd</span>
                         </span>
                         <span class="meta-block">
-                                <span class="time">at 09:30 am</span>
+                            <span class="time">at 09:30 am</span>
                         </span>
                     </a>
                     <!--Event Link-->
                     <a href="#event-6" data-event-id="event-6" class="scroll-link">
                         <span class="date-block">
-                                <i data-feather="calendar"></i>
-                                <span class="month">Jul 28th</span>
+                            <i data-feather="calendar"></i>
+                            <span class="month">Jul 28th</span>
                         </span>
                         <span class="meta-block">
-                                <span class="time">at 02:00 pm</span>
+                            <span class="time">at 02:00 pm</span>
                         </span>
                     </a>
                     <!--Add Event-->
@@ -2387,8 +2389,8 @@ $activityObj = new ActivityView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body">
@@ -2427,8 +2429,8 @@ $activityObj = new ActivityView();
                     <!-- Close X button -->
                     <div class="close-wrap">
                         <span class="close-modal">
-                                <i data-feather="x"></i>
-                            </span>
+                            <i data-feather="x"></i>
+                        </span>
                     </div>
                 </div>
                 <div class="card-body has-text-centered">
@@ -2449,7 +2451,7 @@ $activityObj = new ActivityView();
     </div>
     <!-- Concatenated js plugins and jQuery -->
     <script src="assets/js/app.js"></script>
-    <script src="https://js.stripe.com/v3/"></script>
+
     <script src="assets/data/tipuedrop_content.js"></script>
 
     <!-- Core js -->
@@ -2510,4 +2512,5 @@ $activityObj = new ActivityView();
 
 
 <!-- Mirrored from friendkit.cssninja.io/navbar-v1-events.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Sep 2021 21:59:23 GMT -->
+
 </html>
