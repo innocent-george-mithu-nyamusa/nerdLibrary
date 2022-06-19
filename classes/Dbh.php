@@ -10,9 +10,9 @@ class Dbh
 {
 
     private $host = "localhost";
-    private $user = "u198258808_nerdLibrary";
+    private $user = "developer_nerdlibrary";
     private $pwd = "Coollifestyle@1";
-    private $dbName = "u198258808_nerdLibrary";
+    private $dbName = "nerdlibrary";
 
     protected function connect()
     {

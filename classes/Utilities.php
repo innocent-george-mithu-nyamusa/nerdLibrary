@@ -12,13 +12,13 @@ class Utilities
 
 //    TODO::ADD EMAIL TEMPLATES
     public static $ourMailhtml = '';
-    public static $accountVerificationText = "\nThank You for Signing up with central Play. Click the following link to reset your account. \n";
+    public static $accountVerificationText = "\nThank You for Signing up Nerd Library. Click the following link to reset your account. \n";
     public static $accountPasswordResetText = "Password Reset Request\n\nPlease Click the following Link to reset your account. ";
     public static $accountPasswordResetHtml = "password html";
     public static $accountPasswordResetSubect = "Password Reset Request";
     public static $ourMailText = "";
 
-    public static $emailVerificationSubject = "Thanks for Signing Up with Central Play. Please Verify your Account";
+    public static $emailVerificationSubject = "Thanks for Signing Up with Nerd Library. Please Verify your Account";
     public static $emailverificationHtml = "<html> Html </html>";
 
     public static function uploadPhoto($image, $image_temp, $purpose, ): string|bool

@@ -11,8 +11,7 @@ use SendGrid\Mail\TypeException;
 
 class Emailer extends Dbh
 {
-    private string $centralEmail = "centralemail@gmail.com";
-    private string $centralName = "Central Play";
+
     private string $recipientEmail;
     private string $recipientName;
     private string $verificationCode;
@@ -80,6 +79,9 @@ class Emailer extends Dbh
     }
 
     private function verifyEmailAccountMail(): bool {
+
+        $templates =  new Templates();
+
         $timeExpired = new DateTime("now");
         $timeExpired = $timeExpired->add(new DateInterval('P10M'));
         $timeExpired = $timeExpired->format("Y-m-d H:i");
@@ -93,13 +95,20 @@ class Emailer extends Dbh
         //user email account:: registered email account
         //purpose::verification
         //verification_code:: verificationCode
-        $uniqueLinkTxt = $this->recipientName. Utilities::$accountVerificationText . "https://www.nerdlibary.com/acc_ver/email/".$this->recipientEmail."/verification/".$this->verificationCode. "\n. Click the Above link to Verify Your Account. Please verify your Account within 10 minutes. \n Your Token Expires in 10 minutes.";
 
-        $verificationEmail->setFrom($this->centralEmail, $this->centralName);
+        $uniqueLinkTxt ="channel=email&account=".$this->userVerificationId."&purpose=account_verification&verificationToken=".$this->verificationCode;
+
+        $encodedValues = base64_encode($uniqueLinkTxt);
+        $uniqueLinkUrl = "https://www.nerdlibary.com/confirmEmailAccount.php?t=".$encodedValues;
+
+        $htmlContent = $templates->accountVerifyHtml($this->recipientName, $uniqueLinkUrl);
+        $plainContent = $templates->accountVerifyText($this->recipientName, $uniqueLinkUrl);
+
+        $verificationEmail->setFrom("noreply@nerd-library.com", "Nerd Library");
         $verificationEmail->setSubject(Utilities::$emailVerificationSubject);
         $verificationEmail->addTo("$this->recipientEmail", $this->recipientName);
-        $verificationEmail->addContent("text/plain", $uniqueLinkTxt);
-        $verificationEmail->addContent("text/html", Utilities::$emailverificationHtml);
+        $verificationEmail->addContent("text/plain", $plainContent);
+        $verificationEmail->addContent("text/html", $htmlContent);
 
 //        TODO::CREATE AND PLACE TOKEN HERE
         $sendgrid = new SendGrid("key here");
@@ -108,14 +117,16 @@ class Emailer extends Dbh
 
             $response = $sendgrid->send($verificationEmail);
 
-            $addCodeQuery = "INSERT INTO account_verification_codes (account_to_verify, account_email_verify, account_verification_code, account_code_expiry) VALUES (:accountUserId, :accountUserEmail,:accountVerificationCode, :accountCodeExpiry)";
+            $addCodeQuery = "INSERT INTO account_verification_codes (account_to_verify, account_email_verify, account_verification_code, account_code_expiry) VALUES (:accountUserId, :accountUserEmail, :accountVerificationCode, :accountCodeExpiry)";
 
             if($response->statusCode() == 200) {
+
                 $addCodeStmt = $this->connect()->prepare($addCodeQuery);
                 $addCodeStmt->bindParam(":accountUserId", $this->userVerificationId);
                 $addCodeStmt->bindParam(":accountUserEmail", $this->recipientEmail);
                 $addCodeStmt->bindParam(":accountVerificationCode", $this->verificationCode);
                 $addCodeStmt->bindParam(":accountCodeExpiry", $timeExpired);
+
                 $result = $addCodeStmt->execute();
                 $addCodeStmt->closeCursor();
                 return $result;
@@ -141,6 +152,7 @@ protected function passwordResetResult(): bool {
         $timeExpired = $timeExpired->format("Y-m-d H:i");
 
         $verificationEmail = new Mail();
+
 //        TODO::IMPLEMENT ROUTE TO HANDLE THIS IN HTACCESS
         $passwordResetMailTxt = Utilities::$accountPasswordResetText . "https://www.centralplay.co.zw/pass_ver/email/reset_password/".$this->verificationCode. "\n. Click the Above link to Reset Your Password. Please reset your Account within 24 Hours. \n Your Token Expires in 24 Hours. If you didn't request this reset ignore this email.\n Central Play Team";
 

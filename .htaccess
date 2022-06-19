@@ -5,7 +5,6 @@ php_flag html_errors on
 php_value memory_limit 256M
 
 ErrorDocument 404 error-404.php
-
 #
 #php_flag session.auto_start off
 #php_flag session.use_cookies on
@@ -53,6 +52,7 @@ RewriteRule ^return?gateway=paynow$ payment.php [NC,L]
 ###################################################################TODO::BUILD THESE
 RewriteRule ^support$ user-settings.php [NC,L]
 RewriteRule ^helpdesk$ user-settings.php [NC,L]
+#http://nerd-library.com/helpdesk/#2-f-a
 RewriteRule ^unsubscribe$ user-settings.php [NC,L]
 
 RewriteRule ^interests$ interests-category.php [NC,L]

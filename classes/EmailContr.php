@@ -19,7 +19,6 @@ class EmailContr extends Emailer
 
     protected function setCVerificationCode(): void
     {
-
         $utilities  = new Utilities();
         $verificationCode =$utilities->generateCode();
 
