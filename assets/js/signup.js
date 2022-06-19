@@ -174,9 +174,7 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
 
             });
         }
-
         if (t == "step-dot-5") {
-
             // if ($(this).hasClass(".is-next-4")) {
 
                 function validateNumber(number) {
