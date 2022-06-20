@@ -202,7 +202,7 @@ if (isset($_SESSION["authenticated"])) {
                                     <i data-feather="plus"></i>
                                 </a>
                                 <img id="upload-preview" src="https://via.placeholder.com/150x150" data-demo-src="assets/img/avatars/avatar-w.png" alt="">
-                                <form id="profile-pic-dz" class="dropzone is-hidden" action="http://nerd-library.com/profile-images/"></form>
+                                <form id="profile-pic-dz" class="dropzone is-hidden" action="http://nerd-library.com/profile-images"></form>
                             </div>
                             <div class="limitation">
                                 <small>Only images with a size lower than 3MB are allowed.</small>
