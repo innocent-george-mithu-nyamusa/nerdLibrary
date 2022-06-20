@@ -316,6 +316,7 @@ if (isset($_SESSION["authenticated"])) {
     <script src="assets/js/lightbox.js"></script>
 
     <!-- Landing page js -->
+
     <!-- Signup page js -->
     <script src="assets/js/signup.js"></script>
 
