@@ -69,17 +69,17 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
     });
 
         $("#account-type-1").on("click", function () {
-            console.log("clicked free ");
+
             signUpFormData.append("accountSubscriptionType", "free");
         });
 
       $("#account-type-2").on("click", function () {
-          console.log("clicked standard");
+
             signUpFormData.append("accountSubscriptionType", "standard");
         });
 
       $("#account-type-3").on("click", function () {
-            console.log("clicked premium");
+
             signUpFormData.append("accountSubscriptionType", "premium");
         });
 
