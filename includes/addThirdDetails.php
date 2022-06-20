@@ -28,14 +28,16 @@ if (isset($_POST["accountType"])) {
     $notificationSettingsObj = new NotificationSettingsView();
     $utilityObj = new Utilities();
 
-
+    //Upload user photo
     $userImage = Utilities::uploadPhoto($_FILES["user_image"]["name"], $_FILES["user_image"]["tmp_name"], "profile_image");
 //    echo "data in here";
 
+    //check if photo has been submitted sucessfully
     if(is_bool($userImage)) {
         $userImage = "avatar-w.png";
     }
 
+    //extract values from the post request array
     $accountType = $_POST["accountType"];
     $firstname = $_POST["user_firstname"];
     $lastname = $_POST["user_lastname"];
@@ -45,26 +47,29 @@ if (isset($_POST["accountType"])) {
     $subscriptionType = $_POST["accountSubscriptionType"];
     $accountCurrency = $_POST["user_account_currency"];
 
-        $fullname = $firstname . " " . $lastname;
+    //concat the firstname and lastname to make a full name
+    $fullname = $firstname . " " . $lastname;
 
+    // add user account
     if ($signUpObj->createUser($firstname, $fullname, $phone, $email, $password, $accountCurrency)) {
-//        echo "created account";
-        $userId = $signUpObj->getUserId($email);
 
+
+        //Sign up user
+        $userId = $signUpObj->getUserId($email);
         $userObj->updateUserProfileImage($userId, $userImage);
 
-//        echo $userId;
+        // create application for lecturer or student account
         if ($accountType == "lecturer") {
             $applicationObj->createApplication($userId, "lecturer");
         } elseif ($accountType == "organization") {
             $applicationObj->createApplication($userId, "organization");
         }
 
+        //initiate default settings for user
         $settingsObj->initiateSettings($userId);
         $notificationSettingsObj->enableNotificationSettings($userId);
-//        $emailObj->sendAccountVerificationEmail($fullname, $email, $userId);
+        $emailObj->sendAccountVerificationEmail($fullname, $email, $userId);
 //        echo "we here";
-
 
         $subscriptionObj->createUserSubscription($accountCurrency, $subscriptionType, $userId, $userId);
         $loginObj = new LoginView($_POST["user_password"], $_POST["user_email"]);

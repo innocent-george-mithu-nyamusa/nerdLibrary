@@ -69,14 +69,17 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
     });
 
         $("#account-type-1").on("click", function () {
+            console.log("clicked free ");
             signUpFormData.append("accountSubscriptionType", "free");
         });
 
       $("#account-type-2").on("click", function () {
+          console.log("clicked standard");
             signUpFormData.append("accountSubscriptionType", "standard");
         });
 
       $("#account-type-3").on("click", function () {
+            console.log("clicked premium");
             signUpFormData.append("accountSubscriptionType", "premium");
         });
 
@@ -243,7 +246,6 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
                             $(".is-next-4").removeAttr("disabled");
                         },
                         success: function (data) {
-                            console.log(data);
                             if (data.toString().indexOf("https://www.paynow.co.zw/payment/link/") != -1) {
                                 proceed = true;
                                 $("#mail_success").fadeIn(500);
@@ -252,7 +254,6 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
                                     "href": data.toString(),
                                     "target": "_blank"
                                 });
-
 
                             } else {
                                 $("#mail_fail").fadeIn(500);
@@ -328,6 +329,7 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
             var n = new Cropper(o, {aspectRatio: 1})
         }
     });
+
 
     $("#signup-finish").on("click", (function () {
         var e = $(this);
