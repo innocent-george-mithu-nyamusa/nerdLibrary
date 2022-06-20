@@ -316,7 +316,6 @@ if (isset($_SESSION["authenticated"])) {
     <script src="assets/js/lightbox.js"></script>
 
     <!-- Landing page js -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
     <!-- Signup page js -->
     <script src="assets/js/signup.js"></script>
 
