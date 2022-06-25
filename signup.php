@@ -254,7 +254,6 @@ if (isset($_SESSION["authenticated"])) {
                         <div class="success-text">
                             <h3>Congratz, you successfully created your account.</h3>
                             <p> We just sent you a confirmation email. PLease confirm your account within 24 hours.</p>
-                            <a id="signup-finish" class="button is-fullwidth">Proceed To NerdLibary</a>
                             <a id="pay-paynow" class="button is-fullwidth hidden">Pay My Subscription <span id="subscription-amount"></span></a>
                         </div>
                     </div>
