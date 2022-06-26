@@ -15,7 +15,8 @@
         "intervention/image": "^2.7",
         "pay-now/paynow-php-sdk": "^2.2",
         "nyholm/psr7": "^1.5",
-        "php-http/curl-client": "^2.2"
+        "php-http/curl-client": "^2.2",
+        "paynow/php-sdk": "^1.0"
     },
   "autoload": {
 
