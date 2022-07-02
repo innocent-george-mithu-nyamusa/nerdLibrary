@@ -10,7 +10,7 @@ use SplFileInfo;
 class Utilities
 {
 
-//    TODO::ADD EMAIL TEMPLATES
+    //    TODO::ADD EMAIL TEMPLATES
     public static $ourMailhtml = '';
     public static $accountVerificationText = "\nThank You for Signing up Nerd Library. Click the following link to reset your account. \n";
     public static $accountPasswordResetText = "Password Reset Request\n\nPlease Click the following Link to reset your account. ";
@@ -21,34 +21,33 @@ class Utilities
     public static $emailVerificationSubject = "Thanks for Signing Up with Nerd Library. Please Verify your Account";
     public static $emailverificationHtml = "<html> Html </html>";
 
-    public static function uploadPhoto($image, $image_temp, $purpose, ): string|bool
+    public static function uploadPhoto($image, $image_temp, $purpose,): string|bool
     {
         try {
 
-        $manager = new ImageManager(array('driver' => 'gd'));
-        $splObj = new SplFileInfo($image);
-        $extension = $splObj->getExtension();
-
-        }catch (Exception $exception) {
-            return "Failed to create image manager ". $exception->getMessage();
+            $manager = new ImageManager(array('driver' => 'gd'));
+            $splObj = new SplFileInfo($image);
+            $extension = $splObj->getExtension();
+        } catch (Exception $exception) {
+            return "Failed to create image manager " . $exception->getMessage();
         }
-//        $extension = explode(".", $image)[1];
+        //        $extension = explode(".", $image)[1];
 
         try {
 
-           
-            if($purpose != "category") {
+
+            if ($purpose != "category") {
                 $image = $manager->make($image_temp);
             }
 
             switch ($purpose) {
-                //Used on episode series track, chapter page,
+                    //Used on episode series track, chapter page,
                 case "episode_image_small":
                     $name = self::genUniqueId("img") . "_episode_small" . "." . $extension;
                     $target_dir = "../images/covers/";
                     $image->fit(300, 200);
                     break;
-                //Used on
+                    //Used on
                 case "episode_image_large":
                     $name = self::genUniqueId("img") . "_episode_large" . "." . $extension;
                     $target_dir = "../images/covers/";
@@ -67,15 +66,15 @@ class Utilities
                     $image->fit(640, 640);
                     break;
 
-                //TODO:: FIX THIS
-                //Used On explore page
+                    //TODO:: FIX THIS
+                    //Used On explore page
                 case "series_portrait_cover":
                     $name = self::genUniqueId("use") . "_series_cover" . "." . $extension;
                     $target_dir = "../images/series/";
                     $image->fit(940, 650);
                     break;
 
-                //Used On Profile Overview Page
+                    //Used On Profile Overview Page
                 case "series_small_square_cover":
                     $name = self::genUniqueId("ser") . "_series_small_square_cover" . "." . $extension;
                     $target_dir = "../images/covers/";
@@ -89,7 +88,7 @@ class Utilities
                     $image->fit(800, 600);
                     break;
 
-                //Used on series track
+                    //Used on series track
                 case "series_large_cover_images":
                     $name = self::genUniqueId("ser") . "_series_large_cover" . "." . $extension;
                     $target_dir = "../images/covers/";
@@ -101,13 +100,13 @@ class Utilities
                     $target_dir = "../images/covers/";
                     $image->fit(1600, 460);
                     break;
-                    
+
                 case "category":
-                
-                    $target_dir = "../assets/img/illustrations/questions/".$image;
-                    if(move_uploaded_file($image_temp, $target_dir)){
+
+                    $target_dir = "../assets/img/illustrations/questions/" . $image;
+                    if (move_uploaded_file($image_temp, $target_dir)) {
                         return $image;
-                    }else {
+                    } else {
                         return "icon.svg";
                     }
 
@@ -121,7 +120,7 @@ class Utilities
                     $name = self::genUniqueId("pso") . "_post_image" . "." . $extension;
                     $target_dir = "../images/media/posts/";
 
-                    if(($image->getHeight() < 900) && ($image->getWidth() > 1600)) {
+                    if (($image->getHeight() < 900) && ($image->getWidth() > 1600)) {
                         print_r($image->getHeight());
                         $image->resize(1600, 900);
                     }
@@ -139,12 +138,10 @@ class Utilities
             $image->save($target_file, 100);
 
             return $name;
-
         } catch (Exception $exception) {
             echo "Failed to get Image " . $exception->getMessage();
             return false;
         }
-
     }
 
 
@@ -263,12 +260,10 @@ class Utilities
         try {
             unlink($filename);
             return true;
-
         } catch (Exception $exception) {
             echo "Failed to remove image file :" . $exception->getMessage();
             return false;
         }
-
     }
 
     public static function cleanData($user_data): string
@@ -307,7 +302,6 @@ class Utilities
         if ($uploadOk == 0) {
 
             return "Failed to upload Video File";
-
         } else {
 
             try {
@@ -318,11 +312,9 @@ class Utilities
                     //   $message =  "Sorry, there was an error uploading your file.";
                     return "Failed: There was an error uploading your image";
                 }
-
             } catch (Exception $exception) {
                 return "Failed to upload Video file" . $exception->getMessage();
             }
-
         }
     }
 
@@ -333,7 +325,6 @@ class Utilities
         } else {
             return false;
         }
-
     }
 
     public static function isAllowedInAdmin(): bool
@@ -382,7 +373,8 @@ class Utilities
         return false;
     }
 
-    public static function friendsNumbers(string $friends ): string {
+    public static function friendsNumbers(string $friends): string
+    {
 
         switch (strlen($friends)) {
             case 6:
@@ -403,11 +395,12 @@ class Utilities
             case 15:
                 return substr($friends, 0, -12) . "T";
             default:
-               return $friends;
+                return $friends;
         }
     }
 
-    public static function itemsNumbers(string $item ): string {
+    public static function itemsNumbers(string $item): string
+    {
 
         switch (strlen($item)) {
             case 6:
@@ -428,7 +421,7 @@ class Utilities
             case 15:
                 return substr($item, 0, -12) . "T";
             default:
-               return $item;
+                return $item;
         }
     }
 
@@ -447,8 +440,8 @@ class Utilities
     public static  function elapsedTimeString($start, $end = null, $limit = null, $filter = true, $suffix = 'ago', $format = 'Y-m-d', $separator = ' ', $minimum = 1): string
     {
         $dates = (object) array(
-            'start' => new DateTime($start ? : 'now'),
-            'end' => new DateTime($end ? : 'now'),
+            'start' => new DateTime($start ?: 'now'),
+            'end' => new DateTime($end ?: 'now'),
             'intervals' => array('y' => 'year', 'm' => 'month', 'd' => 'day', 'h' => 'hour', 'i' => 'minute', 's' => 'second'),
             'periods' => array()
         );
@@ -462,7 +455,7 @@ class Utilities
         if (false === empty($limit)) {
             $dates->limit = new DateTime($limit);
             if (date_create()->add($elapsed->interval) > $dates->limit) {
-                return $dates->start->format($format) ? : $elapsed->unknown;
+                return $dates->start->format($format) ?: $elapsed->unknown;
             }
         }
         if (true === is_array($filter)) {
@@ -483,41 +476,43 @@ class Utilities
             return trim(vsprintf('%1$s %2$s', array(implode($separator, $dates->periods), $suffix)));
         }
 
-        return $dates->start->format($format) ? : $elapsed->unknown;
+        return $dates->start->format($format) ?: $elapsed->unknown;
     }
 
 
 
-    public static function optimalCategoryList(array $list): array {
+    public static function optimalCategoryList(array $list): array
+    {
 
 
 
-            uasort($list, function($a , $b) {
+        uasort($list, function ($a, $b) {
 
-                if (strlen($a["cat_description"]) == strlen($b["cat_description"])) return 0;
+            if (strlen($a["cat_description"]) == strlen($b["cat_description"])) return 0;
 
-                return (strlen($a["cat_description"]) > strlen($b["cat_description"])) ? -1:1;
-            });
+            return (strlen($a["cat_description"]) > strlen($b["cat_description"])) ? -1 : 1;
+        });
 
         return $list;
     }
 
-    public static function getNumberOfGroupings(array $sortedList, string $purpose="default") {
+    public static function getNumberOfGroupings(array $sortedList, string $purpose = "default")
+    {
 
         $listLength = count($sortedList);
         $groups = 0;
 
-        switch ($purpose){
+        switch ($purpose) {
 
             case "photo":
-                if($listLength > 4) {
-                    $groups = is_int($listLength) ? floor($listLength/4): 0;
+                if ($listLength > 4) {
+                    $groups = is_int($listLength) ? floor($listLength / 4) : 0;
                 }
 
                 break;
             default:
-                if($listLength >= 7) {
-                    $groups = is_int($listLength) ? floor($listLength/7): 0;
+                if ($listLength >= 7) {
+                    $groups = is_int($listLength) ? floor($listLength / 7) : 0;
                 }
 
                 break;
@@ -527,60 +522,62 @@ class Utilities
     }
 
 
-//    public static function categorisePhotos(array $allPhotos): array {
-//        $patchedCategoriesPhotos = [];
-//        $patchArray = array();
-//
-//        /*
-//             * Structure of Patch = Array [
-//             * "order": "plp",
-//             * "portraits: 2,
-//             * landscape: 1,
-//             * "data": [image_1_data,image_2_data]
-//             *
-//             * ]
-//             */
-//
-//
-//        foreach ($allPhotos as $photo){
-//            //Steps I want to take
-//            //1. Check if image is portrait or landscape
-//            //2. If Portrait Add to a patch array
-//            //3.If landscape check the size of the width
-//            //
-//
-//        }
-//
-//    }
+    //    public static function categorisePhotos(array $allPhotos): array {
+    //        $patchedCategoriesPhotos = [];
+    //        $patchArray = array();
+    //
+    //        /*
+    //             * Structure of Patch = Array [
+    //             * "order": "plp",
+    //             * "portraits: 2,
+    //             * landscape: 1,
+    //             * "data": [image_1_data,image_2_data]
+    //             *
+    //             * ]
+    //             */
+    //
+    //
+    //        foreach ($allPhotos as $photo){
+    //            //Steps I want to take
+    //            //1. Check if image is portrait or landscape
+    //            //2. If Portrait Add to a patch array
+    //            //3.If landscape check the size of the width
+    //            //
+    //
+    //        }
+    //
+    //    }
 
 
 
-    public static function getDifferenceArray(array $firstList, array $secondList): array {
+    public static function getDifferenceArray(array $firstList, array $secondList): array
+    {
 
-        $result = array_udiff_assoc($firstList, $secondList, function ($a,$b) {
+        $result = array_udiff_assoc($firstList, $secondList, function ($a, $b) {
 
-                if ($a["category_id"] != $b["category_id"])
-                {
-                    return 0;
-                }
-                return ($a["category_id"] == $b["category_id"])? 1:-1;
+            if ($a["category_id"] != $b["category_id"]) {
+                return 0;
+            }
+            return ($a["category_id"] == $b["category_id"]) ? 1 : -1;
         });
 
         return $result;
     }
 
-    public function userPaymentLink($typeOfAccount="free") :string {
+    public function userPaymentLink($typeOfAccount = "free"): string
+    {
 
-      $cost = $this->subscriptionAccountAmount($_SESSION["currency"], $typeOfAccount);
+        $cost = $this->subscriptionAccountAmount($_SESSION["currency"], $typeOfAccount);
 
-        $encodeString = "search=innocentnyamusa@gmail.com&amount=".$cost."&reference=".$_SESSION["user_id"]."&l=1";
+        $encodeString = "search=innocentnyamusa@gmail.com&amount=" . $cost . "&reference=" . $_SESSION["user_id"] . "&l=1";
         $encodedString = base64_encode($encodeString);
 
-        return "https://www.paynow.co.zw/payment/link/".$_SESSION["user_email"]."?q=".$encodedString;
+        return "https://www.paynow.co.zw/payment/link/" . $_SESSION["user_email"] . "?q=" . $encodedString;
     }
 
 
-    public function subscriptionCovers(string $accountType): string {
+    public function subscriptionCovers(string $accountType): string
+    {
 
         switch ($_SESSION["subscription"]) {
             case "premium":
@@ -605,32 +602,34 @@ class Utilities
         }
 
 
-        if( $level < $expectation){
+        if ($level < $expectation) {
             return "false";
-        }else{
+        } else {
             return "true";
         }
     }
 
-    public function subscriptionAccountAmount(string $currency, $subscriptionAcc = "free"){
+    public function subscriptionAccountAmount(string $currency, $subscriptionAcc = "free")
+    {
 
-        $subscriptionAcc = isset($_SESSION["subscription"])? $_SESSION["subscription"] : $subscriptionAcc;
+        $subscriptionAcc = isset($_SESSION["subscription"]) ? $_SESSION["subscription"] : $subscriptionAcc;
 
         switch ($currency) {
             case "us":
-                if($subscriptionAcc == "premium"){
+                if ($subscriptionAcc == "premium") {
                     return 5.0;
-                }else if($subscriptionAcc == "standard"){
+                } else if ($subscriptionAcc == "standard") {
                     return 3.0;
-                }else {
+                } else {
                     return 0.0;
                 }
+
             case "rtgs":
-                if($subscriptionAcc == "premium"){
+                if ($subscriptionAcc == "premium") {
                     return 600.0;
-                }else if($subscriptionAcc == "standard"){
+                } else if ($subscriptionAcc == "standard") {
                     return 200.0;
-                }else {
+                } else {
                     return 0.0;
                 }
 
@@ -639,17 +638,15 @@ class Utilities
         }
     }
 
-   /**
+    /**
      * Truncates the given string at the specified length.
      *
      * @param string $str The input string.
      * @param int $width The number of chars at which the string will be truncated.
      * @return string
      */
-    public static function truncate($str, $width) {
-    return strtok(wordwrap($str, $width, "...\n"), "\n");
+    public static function truncate($str, $width)
+    {
+        return strtok(wordwrap($str, $width, "...\n"), "\n");
     }
-
-
-
 }

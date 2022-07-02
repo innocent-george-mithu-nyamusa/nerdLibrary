@@ -156,15 +156,37 @@ if (isset($_SESSION["authenticated"])) {
                                     <input type="text" class="input" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" id="user_email" name="user_email" placeholder="Enter your email address" required>
                                 </div>
                             </div>
-                            <div class="field">
-                                <label>Select Monthly Subscription Currency</label>
-                                <div class="form-control">
-                                    <select id="account-currency" class="input " name="currency">
-                                        <option value="us">us</option>
-                                        <option value="rtgs">rtgs</option>
-                                    </select>
+
+                            <div class="columns mt-2">
+                                <div class="column is-6">
+                                    <div class="field">
+                                        <label>Select Currency</label>
+                                        <div class="form-control">
+                                            <select id="account-currency" class="input " name="currency">
+                                                <option value="us">us</option>
+                                                <option value="rtgs">rtgs</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
                                 </div>
+
+                                <div class="column is-6">
+                                    <div class="field">
+                                        <label>Payment Option</label>
+                                        <div class="form-control">
+                                            <select id="account-payment-option" class="input " name="payment-option">
+                                                <option value="ecocash">ecocash</option>
+                                                <option value="onemoney">onemoney</option>
+                                                <option value="telecash">telecash</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+
                             </div>
+
                             <div class="field-body">
                                 <label class="material-radio is-accent">
                                     <input id="account-type-1" type="radio" name="account-type" value="free" checked>
@@ -182,6 +204,7 @@ if (isset($_SESSION["authenticated"])) {
                                     <span class="radio-label">Premium<br />(rtgs: 600 | us: 5)</span>
                                 </label>
                             </div>
+
 
                             <div id='mail_success' class='success'>Your have registered successfully.</div>
                             <div id='mail_fail' class='error'>Sorry, error in registering .</div>

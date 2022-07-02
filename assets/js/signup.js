@@ -1,5 +1,5 @@
 "use strict";
-/*! signup.js | Friendkit | © Css Ninja. 2019-2020 */
+
 Dropzone.autoDiscover = !1, $(document).ready((function () {
     var signUpFormData = new FormData();
     var proceed = false;
@@ -69,7 +69,6 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
     });
 
         $("#account-type-1").on("click", function () {
-
             signUpFormData.append("accountSubscriptionType", "free");
         });
 
@@ -79,9 +78,9 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
         });
 
       $("#account-type-3").on("click", function () {
-
             signUpFormData.append("accountSubscriptionType", "premium");
         });
+
 
     $("#password_confirm").change(function () {
 
@@ -144,7 +143,8 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
                     c = $("#user_email").val(),
                     f = $("#user_firstname").val(),
                     g = $("#user_lastname").val(),
-                    j = $("#account-currency").val();
+                    j = $("#account-currency").val(),
+                    k = $("#account-payment-option").val();
 
                 if ($("#user_email, #user_firstname, #user_lastname").click(function () {
                     $(this).removeClass("error_input")
@@ -166,10 +166,13 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
                 0 == b && ($(".is-next-2").attr({
                     disabled: "true",
                 }),
+
                     signUpFormData.append("user_firstname", f),
                     signUpFormData.append("user_lastname", g),
                     signUpFormData.append("user_email", c),
                     signUpFormData.append("user_account_currency", j),
+                    signUpFormData.append("user_account_payment_option_platform", k),
+
                     proceed = true,
                     $("#mail_success").fadeIn(500),
                     $(".is-next-2").removeAttr("disabled")
@@ -246,14 +249,17 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
                             $(".is-next-4").removeAttr("disabled");
                         },
                         success: function (data) {
+
                             if (data.toString().indexOf("https://www.paynow.co.zw/payment/link/") != -1) {
                                 proceed = true;
+
                                 $("#mail_success").fadeIn(500);
                                 $(".is-next-4").attr("disabled", !1).removeAttr("disabled");
-                                $("#pay-paynow").removeClass("hidden").attr({
-                                    "href": data.toString(),
-                                    "target": "_blank"
-                                });
+
+                                // $("#pay-paynow").removeClass("hidden").attr({
+                                //     "href": data.toString(),
+                                //     "target": "_blank"
+                                // });
 
                             } else {
                                 $("#mail_fail").fadeIn(500);
@@ -331,11 +337,44 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
     });
 
 
-    $("#signup-finish").on("click", (function () {
+    $("#pay-paynow").on("click", (function () {
         var e = $(this);
+
+        $.ajax(
+            {
+                url: "includes/payments/payment.php",
+                method: "post",
+                data: signUpFormData,
+                contentType: false,
+                processData: false,
+                failed: function () {
+                    $("#mail_fail").fadeIn(500);
+                    $(".is-next-4").removeAttr("disabled");
+                },
+                success: function (data) {
+
+                    if (data.toString().indexOf("https://www.paynow.co.zw/payment/link/") != -1) {
+                        proceed = true;
+
+                        $("#mail_success").fadeIn(500);
+                        $(".is-next-4").attr("disabled", !1).removeAttr("disabled");
+
+                        // $("#pay-paynow").removeClass("hidden").attr({
+                        //     "href": data.toString(),
+                        //     "target": "_blank"
+                        // });
+
+                    } else {
+                        $("#mail_fail").fadeIn(500);
+                        $("#is-next-2").removeAttr("disabled");
+                    }
+                }
+            }
+        );
+
         e.addClass("is-loading"), setTimeout((function () {
             // TODO:: FIX THIS ROUTE
-            window.location = "interests"
+            // window.location = "interests"
         }), 800)
     }))
 }));
