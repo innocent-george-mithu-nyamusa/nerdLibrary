@@ -11,7 +11,7 @@ $paynow = new Paynow\Payments\Paynow(
     'http://nerd-library.com/payments/paymentConfirmation.php',
 
     // The return url can be set at later stages. You might want to do this if you want to pass data to the return url (like the reference of the transaction)
-    'http://nerd-library.com/return/paynow'
+    'http://nerd-library.com/interests'
 );
 
 if (isset($_POST)) {
