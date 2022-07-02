@@ -8,14 +8,14 @@ $utilityObj = new Utilities();
 $paynow = new Paynow\Payments\Paynow(
     'INTEGRATION_ID',
     'INTEGRATION_KEY',
-    'http://nerd-library.com/payment/paynow/update',
+    'http://nerd-library.com/payments/paymentConfirmation.php',
 
     // The return url can be set at later stages. You might want to do this if you want to pass data to the return url (like the reference of the transaction)
     'http://nerd-library.com/return/paynow'
 );
 
 if (isset($_POST)) {
-    
+
     $reference = $_POST["user_phone"] . " subscription";
     $currency = $_POST["user_account_currency"];
     $phone_number = $_POST["user_phone"];
