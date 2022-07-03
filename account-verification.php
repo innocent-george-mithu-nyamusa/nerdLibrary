@@ -38,12 +38,8 @@ if(($channel == "channel=email") && ($purpose=="purpose=account_verification") &
 <!DOCTYPE html>
 <html lang="en">
 
-
-
-<meta http-equiv="content-type" content="text/html;charset=utf-8" />
-
 <head>
-
+    <meta http-equiv="content-type" content="text/html;charset=utf-8" />
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -69,18 +65,43 @@ if(($channel == "channel=email") && ($purpose=="purpose=account_verification") &
     <div class="error-container">
         <div class="error-wrapper">
             <div class="error-inner has-text-centered">
+
+            <?php if(isset($verified) && $verified) { ?>
+
+
                 <div class="bg-number dark-inverted">
-                    404
+                    Success
                 </div>
-                <img class="light-image" src="assets/img/illustrations/placeholders/3.svg" alt="" />
+                <!-- <img class="light-image" src="assets/img/illustrations/placeholders/3.svg" alt="" /> -->
+                <img class="dark-image" src="assets/img/illustrations/placeholders/welcome.svg" alt="" />
+                <h3 class="dark-inverted">
+                    Verification Successful
+                </h3>
+                <p>
+                    Successfully verifed your account please proceed to login.
+                </p>
+                <div class="button-wrap">
+                    <a href="/login_account" class="button h-button is-primary is-elevated" >login</a>
+                </div>
+
+                                        <?php } elseif(isset($verified) && !$verified) { ?>
+
+                <div class="bg-number dark-inverted">
+                    Failed
+                </div>
+                <!-- <img class="light-image" src="assets/img/illustrations/placeholders/3.svg" alt="" /> -->
                 <img class="dark-image" src="assets/img/illustrations/placeholders/3.svg" alt="" />
                 <h3 class="dark-inverted">
-                    We couldn't
-                    find that page</h3>
-                <p>Looks like we couldn't find that page. Please try again or contact an administrator if the problem persists.</p>
+                    Verification Failed
+                </h3>
+                <p>
+                    Account verification failed. Your link has expired. Please retry.
+                </p>
                 <div class="button-wrap">
-                    <a class="button h-button is-primary is-elevated" onclick="goBack()">Take me Back</a>
+                    <a href="/verify" class="button h-button is-primary is-elevated">retry</a>
                 </div>
+                                        <?php } ?>
+
             </div>
         </div>
     </div>

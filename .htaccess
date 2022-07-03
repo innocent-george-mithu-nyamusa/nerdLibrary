@@ -39,7 +39,6 @@ RewriteRule ^logout_account$ logout.php [NC,L]
 RewriteRule ^explore$ explore.php [NC,L]
 RewriteRule ^payment/paynow/update$ paymentConfirmation.php [NC,L]
 
-
 RewriteRule ^profile/overview$ user-profile-overview.php [NC,L]
 RewriteRule ^profile/main$ user-profile-main.php [NC,L]
 RewriteRule ^profile/photos$ user-profile-photos.php [NC,L]
@@ -47,6 +46,8 @@ RewriteRule ^profile/friends$ user-profile-friends.php [NC,L]
 RewriteRule ^profile/settings$ user-settings.php [NC,L]
 
 RewriteRule ^feed$ main-user-feed.php [NC,L]
+RewriteRule ^verify$ email-verify.php [NC,L]
+
 
 RewriteRule ^gateways/paynow/update$ paymentReceive.php [NC,L]
 RewriteRule ^return?gateway=paynow$ payment.php [NC,L]
