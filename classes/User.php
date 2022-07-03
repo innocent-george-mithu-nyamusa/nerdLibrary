@@ -220,12 +220,10 @@ class User extends Dbh
             $singleUserStmt = $this->connect()->prepare($singleUserQuery);
             $singleUserStmt->execute([$this->userId]);
             return $singleUserStmt->fetchAll(PDO::FETCH_ASSOC);
-
         } catch (Exception $exception) {
             echo "Fetching user failed" . $exception->getMessage();
             return null;
         }
-
     }
 
     protected function getLecturesResult(): ?array
@@ -245,7 +243,6 @@ class User extends Dbh
             echo "Fetching user failed" . $exception->getMessage();
             return null;
         }
-
     }
 
     protected function getAllAgentsResult(): ?array
@@ -268,7 +265,6 @@ class User extends Dbh
             echo "Fetching user failed" . $exception->getMessage();
             return null;
         }
-
     }
 
 
@@ -412,7 +408,6 @@ class User extends Dbh
             }
             $emailStmt->closeCursor();
             return false;
-
         } catch (Exception $exception) {
             echo "Error in finding email " . $exception->getMessage();
             return false;
@@ -454,7 +449,8 @@ class User extends Dbh
         return $this->getAllUsers();
     }
 
-    private function getAllUsers(): ?array {
+    private function getAllUsers(): ?array
+    {
         try {
             $allUsersQuery = "SELECT * FROM user WHERE username!='anonymous'";
             $allUsersStmt = $this->connect()->prepare($allUsersQuery);
@@ -472,7 +468,8 @@ class User extends Dbh
     {
         return self::getGeneralUsers();
     }
-    private function getGeneralUsers(): ?array {
+    private function getGeneralUsers(): ?array
+    {
         try {
             $allUsersQuery = "SELECT * FROM user WHERE username!='anonymous' AND user_role!='agent' AND user_role!='admin'";
             $allUsersStmt = $this->connect()->prepare($allUsersQuery);
@@ -486,10 +483,12 @@ class User extends Dbh
         }
     }
 
-    protected function disableUserStatus(): bool {
-       return self::disableUser();
+    protected function disableUserStatus(): bool
+    {
+        return self::disableUser();
     }
-    private function disableUser(): bool {
+    private function disableUser(): bool
+    {
         try {
             $updateStatus = "UPDATE user SET user_status='disabled' WHERE user_id=:userId";
             $updateStatusStmt = $this->connect()->prepare($updateStatus);
@@ -497,17 +496,19 @@ class User extends Dbh
             $result = $updateStatusStmt->execute();
             $updateStatusStmt->closeCursor();
             return $result;
-        }catch (Exception $exception) {
+        } catch (Exception $exception) {
             echo "Failed to delete user" . $exception->getMessage();
             return false;
         }
     }
 
-    protected function addAdminEarningsStatus(): bool {
+    protected function addAdminEarningsStatus(): bool
+    {
         return self::adminEarnings();
     }
 
-    private function adminEarnings(): bool {
+    private function adminEarnings(): bool
+    {
         try {
             $updateAdminEarnings  = "UPDATE user SET user_earnings=:userEarnings WHERE user_id=:userId";
             $updateAdminEarningsStmt = $this->connect()->prepare($updateAdminEarnings);
@@ -515,19 +516,20 @@ class User extends Dbh
             $result = $updateAdminEarningsStmt->execute();
             $updateAdminEarningsStmt->closeCursor();
             return $result;
-
-        }catch (Exception $exception) {
+        } catch (Exception $exception) {
             echo "Failed to add admin earnings user" . $exception->getMessage();
             return false;
         }
     }
 
 
-    protected function addUserEarningsStatus(): bool {
+    protected function addUserEarningsStatus(): bool
+    {
         return self::addEarnings();
     }
 
-    private function addEarnings(): bool {
+    private function addEarnings(): bool
+    {
 
         try {
             $selectEarnings = "SELECT user_earnings FROM user WHERE user_id=:userId";
@@ -547,17 +549,19 @@ class User extends Dbh
             $updateStatusStmt->closeCursor();
 
             return $result;
-        }catch (Exception $exception) {
+        } catch (Exception $exception) {
             echo "Failed to delete user" . $exception->getMessage();
             return false;
         }
     }
 
-    protected function updateAccountTypeStatus():bool {
+    protected function updateAccountTypeStatus(): bool
+    {
         return $this->updateAccountType();
     }
 
-    private function updateAccountType(): bool {
+    private function updateAccountType(): bool
+    {
         try {
             $updateUserStatusQuery = "UPDATE user SET user_account_type=:accountType WHERE user_email=:userEmail";
             $updateUserStatusStmt = $this->connect()->prepare($updateUserStatusQuery);
@@ -566,13 +570,14 @@ class User extends Dbh
             $result = $updateUserStatusStmt->execute();
             $updateUserStatusStmt->closeCursor();
             return $result;
-        }catch (Exception $exception){
+        } catch (Exception $exception) {
             echo "Failed to update user" . $exception->getMessage();
             return false;
         }
     }
 
-    private function updateUserVerification(): bool {
+    private function updateUserVerification(): bool
+    {
         try {
             $updateUserStatusQuery = "UPDATE user SET user_status='verified' WHERE user_email=:userEmail";
             $updateUserStatusStmt = $this->connect()->prepare($updateUserStatusQuery);
@@ -580,17 +585,19 @@ class User extends Dbh
             $result = $updateUserStatusStmt->execute();
             $updateUserStatusStmt->closeCursor();
             return $result;
-        }catch (Exception $exception){
+        } catch (Exception $exception) {
             echo "Failed to update user" . $exception->getMessage();
             return false;
         }
     }
 
-    protected function userVerificationStatus(): bool {
+    protected function userVerificationStatus(): bool
+    {
         return $this->verifyUser();
     }
 
-    private function verifyUser(): bool {
+    private function verifyUser(): bool
+    {
         $currentTime = new DateTime("now");
         $currentTime = $currentTime->format("Y-m-d H:i");
 
@@ -606,15 +613,15 @@ class User extends Dbh
 
             $verificationStmt->closeCursor();
 
-            if(!$results[0]["account_code_expiry"]) {
+            if (!$results[0]["account_code_expiry"]) {
                 return false;
             }
 
-            if($results[0]["account_code_expiry"] < $currentTime){
+            if ($results[0]["account_code_expiry"] < $currentTime) {
                 return false;
             }
 
-            if($verifiedUser > 0 AND $this->updateUserVerification()) {
+            if ($verifiedUser > 0 and $this->updateUserVerification()) {
 
                 $removeVerificationQuery = "DELETE FROM account_verification_codes WHERE account_email_verify=:userEmail";
                 $removeVerificationStmt = $this->connect()->prepare($removeVerificationQuery);
@@ -622,19 +629,20 @@ class User extends Dbh
                 return $removeVerificationStmt->execute();
             }
             return false;
-        }catch (Exception $exception) {
-            echo "Failed to verify user ". $exception->getMessage();
+        } catch (Exception $exception) {
+            echo "Failed to verify user " . $exception->getMessage();
             return false;
         }
-
     }
 
-    protected function checkPasswordVerificationCodeStatus(): bool {
+    protected function checkPasswordVerificationCodeStatus(): bool
+    {
         return $this->checkPasswordverificationCode();
     }
 
 
-    private function checkPasswordVerificationCode(): bool {
+    private function checkPasswordVerificationCode(): bool
+    {
         try {
             $passwordVerificationCodeCheckQuery = "SELECT COUNT(*) FROM password_reset_codes WHERE account_verification_code=:verificationCode";
             $passwordVerificationCodeCheckStmt = $this->connect()->prepare($passwordVerificationCodeCheckQuery);
@@ -642,21 +650,23 @@ class User extends Dbh
             $passwordVerificationCodeCheckStmt->execute();
             $codes = $passwordVerificationCodeCheckStmt->fetchColumn();
             $passwordVerificationCodeCheckStmt->closeCursor();
-            if($codes > 0) {
-            return true;
+            if ($codes > 0) {
+                return true;
             }
             return false;
-        }catch (Exception $exception) {
-            echo "Failed to verify password Verification code ". $exception->getMessage();
+        } catch (Exception $exception) {
+            echo "Failed to verify password Verification code " . $exception->getMessage();
             return false;
         }
     }
 
-    protected function updateCoverImageResult(): bool {
+    protected function updateCoverImageResult(): bool
+    {
         return $this->updateCoverImage();
     }
 
-    private function updateCoverImage() :bool {
+    private function updateCoverImage(): bool
+    {
         try {
 
             $updateCoverImageQuery = "UPDATE user SET user_profile_image_cover=:userProfileImage WHERE user_id=:userId";
@@ -666,18 +676,19 @@ class User extends Dbh
             $result = $updateCoverImageStmt->execute();
             $updateCoverImageStmt->closeCursor();
             return $result;
-
-        }catch (Exception $exception) {
-            echo "Failed to update cover image". $exception->getMessage();
+        } catch (Exception $exception) {
+            echo "Failed to update cover image" . $exception->getMessage();
             return false;
         }
     }
 
-    protected function updateProfileImageResult(): bool {
+    protected function updateProfileImageResult(): bool
+    {
         return $this->updateProfileImage();
     }
 
-    private function updateProfileImage() :bool {
+    private function updateProfileImage(): bool
+    {
         try {
 
             $updateCoverImageQuery = "UPDATE user SET user_image=:userProfileImage WHERE user_id=:userId";
@@ -687,13 +698,22 @@ class User extends Dbh
             $result = $updateCoverImageStmt->execute();
             $updateCoverImageStmt->closeCursor();
             return $result;
-
-        }catch (Exception $exception) {
-            echo "Failed to update cover image". $exception->getMessage();
+        } catch (Exception $exception) {
+            echo "Failed to update cover image" . $exception->getMessage();
             return false;
         }
     }
 
+    // private function updatePaidUser(): bool {
+    //     try {
+
+    //         $updatePaiduser = "UPDATE user SET "
+
+
+    //         //code...
+    //     } catch (Exception $exc) {
+    //         //throw $th;
+    //     }
+    // }
+
 }
-
-

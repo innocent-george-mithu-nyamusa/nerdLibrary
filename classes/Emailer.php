@@ -18,29 +18,29 @@ class Emailer extends Dbh
     private string $verificationToken;
     private string $userVerificationId;
 
-//    public function __construct($name, $email, $messagePlain, $messageHtml){
-//
-//        $mail = new Mail();
-//
-//        $mail->setFrom("lostandfound@lostandfound.com", "Lost and Found");
-//        $mail->setSubject("Thanks for Signing Up with Lost and Found. Please Verify your Account");
-//        $mail->addTo("$email", "$name");
-//        $mail->addContent("text/plain", $messagePlain);
-//        $mail->addContent("text/html", $messageHtml);
-//
-//        $sendgrid = new SendGrid("key here");
-//
-//        try {
-//            $response = $sendgrid->send($email);
-//            // print $response->statusCode() . "\n";
-//            // print_r($response->headers());
-//            // print $response->body() . "\n";
-////            $request = new UserRequest($name, $email, $messagePlain);
-//        } catch (Exception $e) {
-//            echo "Caught exception ". $e->getMessage(). "\n";
-//        }
-//
-//    }
+    //    public function __construct($name, $email, $messagePlain, $messageHtml){
+    //
+    //        $mail = new Mail();
+    //
+    //        $mail->setFrom("lostandfound@lostandfound.com", "Lost and Found");
+    //        $mail->setSubject("Thanks for Signing Up with Lost and Found. Please Verify your Account");
+    //        $mail->addTo("$email", "$name");
+    //        $mail->addContent("text/plain", $messagePlain);
+    //        $mail->addContent("text/html", $messageHtml);
+    //
+    //        $sendgrid = new SendGrid("key here");
+    //
+    //        try {
+    //            $response = $sendgrid->send($email);
+    //            // print $response->statusCode() . "\n";
+    //            // print_r($response->headers());
+    //            // print $response->body() . "\n";
+    ////            $request = new UserRequest($name, $email, $messagePlain);
+    //        } catch (Exception $e) {
+    //            echo "Caught exception ". $e->getMessage(). "\n";
+    //        }
+    //
+    //    }
 
     /**
      * @param string $userVerificationId
@@ -74,11 +74,13 @@ class Emailer extends Dbh
         $this->verificationCode = $verificationCode;
     }
 
-    protected function verifyAccountStatus(): bool {
+    protected function verifyAccountStatus(): bool
+    {
         return $this->verifyEmailAccountMail();
     }
 
-    private function verifyEmailAccountMail(): bool {
+    private function verifyEmailAccountMail(): bool
+    {
 
         $templates =  new Templates();
 
@@ -96,10 +98,10 @@ class Emailer extends Dbh
         //purpose::verification
         //verification_code:: verificationCode
 
-        $uniqueLinkTxt ="channel=email&account=".$this->userVerificationId."&purpose=account_verification&verificationToken=".$this->verificationCode;
+        $uniqueLinkTxt = "channel=email&account=" . $this->userVerificationId . "&purpose=account_verification&verificationToken=" . $this->verificationCode;
 
         $encodedValues = base64_encode($uniqueLinkTxt);
-        $uniqueLinkUrl = "https://www.nerdlibary.com/confirmEmailAccount.php?t=".$encodedValues;
+        $uniqueLinkUrl = "https://www.nerdlibary.com/account-verification.php?t=" . $encodedValues;
 
         $htmlContent = $templates->accountVerifyHtml($this->recipientName, $uniqueLinkUrl);
         $plainContent = $templates->accountVerifyText($this->recipientName, $uniqueLinkUrl);
@@ -110,7 +112,7 @@ class Emailer extends Dbh
         $verificationEmail->addContent("text/plain", $plainContent);
         $verificationEmail->addContent("text/html", $htmlContent);
 
-//        TODO::CREATE AND PLACE TOKEN HERE
+        //        TODO::CREATE AND PLACE TOKEN HERE
         $sendgrid = new SendGrid("key here");
 
         try {
@@ -119,7 +121,7 @@ class Emailer extends Dbh
 
             $addCodeQuery = "INSERT INTO account_verification_codes (account_to_verify, account_email_verify, account_verification_code, account_code_expiry) VALUES (:accountUserId, :accountUserEmail, :accountVerificationCode, :accountCodeExpiry)";
 
-            if($response->statusCode() == 200) {
+            if ($response->statusCode() == 200) {
 
                 $addCodeStmt = $this->connect()->prepare($addCodeQuery);
                 $addCodeStmt->bindParam(":accountUserId", $this->userVerificationId);
@@ -130,22 +132,23 @@ class Emailer extends Dbh
                 $result = $addCodeStmt->execute();
                 $addCodeStmt->closeCursor();
                 return $result;
-
             }
             return false;
-        }catch (Exception $exception){
+        } catch (Exception $exception) {
 
-            echo "Error Sending Email ". $exception->getMessage();
+            echo "Error Sending Email " . $exception->getMessage();
             return false;
         }
-}
+    }
 
 
-protected function passwordResetResult(): bool {
+    protected function passwordResetResult(): bool
+    {
         return $this->resetPasswordEmail();
-}
+    }
 
-    private function resetPasswordEmail(): bool {
+    private function resetPasswordEmail(): bool
+    {
 
         $timeExpired = new DateTime("now");
         $timeExpired = $timeExpired->add(new DateInterval('P1D'));
@@ -153,14 +156,13 @@ protected function passwordResetResult(): bool {
 
         $verificationEmail = new Mail();
 
-//        TODO::IMPLEMENT ROUTE TO HANDLE THIS IN HTACCESS
-        $passwordResetMailTxt = Utilities::$accountPasswordResetText . "https://www.centralplay.co.zw/pass_ver/email/reset_password/".$this->verificationCode. "\n. Click the Above link to Reset Your Password. Please reset your Account within 24 Hours. \n Your Token Expires in 24 Hours. If you didn't request this reset ignore this email.\n Central Play Team";
+        //        TODO::IMPLEMENT ROUTE TO HANDLE THIS IN HTACCESS
+        $passwordResetMailTxt = Utilities::$accountPasswordResetText . "https://www.centralplay.co.zw/pass_ver/email/reset_password/" . $this->verificationCode . "\n. Click the Above link to Reset Your Password. Please reset your Account within 24 Hours. \n Your Token Expires in 24 Hours. If you didn't request this reset ignore this email.\n Central Play Team";
 
         $verificationEmail->setFrom($this->centralEmail, $this->centralName);
         try {
 
             $verificationEmail->setSubject(Utilities::$accountPasswordResetSubect);
-
         } catch (TypeException $e) {
 
             echo $e->getMessage();
@@ -171,7 +173,7 @@ protected function passwordResetResult(): bool {
         $verificationEmail->addContent("text/plain", $passwordResetMailTxt);
         $verificationEmail->addContent("text/html", Utilities::$accountPasswordResetHtml);
 
-//        TODO::CREATE AND PLACE TOKEN HERE
+        //        TODO::CREATE AND PLACE TOKEN HERE
         $sendgrid = new SendGrid("key here");
 
         try {
@@ -180,7 +182,7 @@ protected function passwordResetResult(): bool {
 
             $addCodeQuery = "INSERT INTO password_reset_codes(account_to_verify, account_email_verify, account_verification_code, account_code_expiry) VALUES (:accountUserId, :accountUserEmail,:accountVerificationCode, :accountCodeExpiry)";
 
-            if($response->statusCode() == 200) {
+            if ($response->statusCode() == 200) {
 
                 $addCodeStmt = $this->connect()->prepare($addCodeQuery);
                 $addCodeStmt->bindParam(":accountUserId", $this->userVerificationId);
@@ -193,12 +195,10 @@ protected function passwordResetResult(): bool {
             }
 
             return false;
-        }catch (Exception $exception){
+        } catch (Exception $exception) {
 
-            echo "Error Sending Email ". $exception->getMessage();
+            echo "Error Sending Email " . $exception->getMessage();
             return false;
         }
     }
-
-
 }
