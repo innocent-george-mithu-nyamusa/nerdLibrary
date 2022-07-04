@@ -8,29 +8,29 @@ $userObj = new UserView();
 
 $verified =  false;
 
-if(isset($_GET["t"])) {
+if (isset($_GET["t"])) {
     //Get the base 64 string ad decode it.
     //Now expand and separate each query string into an array.
 
-   $queryString = explode("&", base64_decode($_GET["t"]));
+    $queryString = explode("&", base64_decode($_GET["t"]));
 
-   $channel = $queryString[0];
-   $userId = $queryString[1];
-   $purpose= $queryString[2];
-   $verificationCode = explode("=", $queryString[3])[1];
+    $channel = $queryString[0];
+    $userId = $queryString[1];
+    $purpose = $queryString[2];
+    $verificationCode = explode("=", $queryString[3])[1];
 
-   print_r($queryString);
+    print_r($queryString);
 
-if(($channel == "channel=email") && ($purpose=="purpose=account_verification") && isset($verificationCode) && isset($userId)) {
+    if (($channel == "channel=email") && ($purpose == "purpose=account_verification") && isset($verificationCode) && isset($userId)) {
 
-    // print_r($userId);
-    $id = explode("=", $userId)[1];
-    // print_r($id);
- $verified = $userObj->verifyAccount($id, $verificationCode);
+        // print_r($userId);
+        $id = explode("=", $userId)[1];
+        // print_r($id);
+        $verified = $userObj->verifyAccount($id, $verificationCode);
 
- echo "verified ". $verified;
-
-}else {
+        echo "verified " . $verified;
+    }
+} else {
     header("Location: /");
 }
 ?>
@@ -66,41 +66,41 @@ if(($channel == "channel=email") && ($purpose=="purpose=account_verification") &
         <div class="error-wrapper">
             <div class="error-inner has-text-centered">
 
-            <?php if(isset($verified) && $verified) { ?>
+                <?php if (isset($verified) && $verified) { ?>
 
 
-                <div class="bg-number dark-inverted">
-                    Success
-                </div>
-                <!-- <img class="light-image" src="assets/img/illustrations/placeholders/3.svg" alt="" /> -->
-                <img class="dark-image" src="assets/img/illustrations/placeholders/welcome.svg" alt="" />
-                <h3 class="dark-inverted">
-                    Verification Successful
-                </h3>
-                <p>
-                    Successfully verifed your account please proceed to login.
-                </p>
-                <div class="button-wrap">
-                    <a href="/login_account" class="button h-button is-primary is-elevated" >login</a>
-                </div>
+                    <div class="bg-number dark-inverted">
+                        Success
+                    </div>
+                    <!-- <img class="light-image" src="assets/img/illustrations/placeholders/3.svg" alt="" /> -->
+                    <img class="dark-image" src="assets/img/illustrations/placeholders/welcome.svg" alt="" />
+                    <h3 class="dark-inverted">
+                        Verification Successful
+                    </h3>
+                    <p>
+                        Successfully verifed your account please proceed to login.
+                    </p>
+                    <div class="button-wrap">
+                        <a href="/login_account" class="button h-button is-primary is-elevated">login</a>
+                    </div>
 
-                                        <?php } elseif(isset($verified) && !$verified) { ?>
+                <?php } elseif (isset($verified) && !$verified) { ?>
 
-                <div class="bg-number dark-inverted">
-                    Failed
-                </div>
-                <!-- <img class="light-image" src="assets/img/illustrations/placeholders/3.svg" alt="" /> -->
-                <img class="dark-image" src="assets/img/illustrations/placeholders/3.svg" alt="" />
-                <h3 class="dark-inverted">
-                    Verification Failed
-                </h3>
-                <p>
-                    Account verification failed. Your link has expired. Please retry.
-                </p>
-                <div class="button-wrap">
-                    <a href="/verify" class="button h-button is-primary is-elevated">retry</a>
-                </div>
-                                        <?php } ?>
+                    <div class="bg-number dark-inverted">
+                        Failed
+                    </div>
+                    <!-- <img class="light-image" src="assets/img/illustrations/placeholders/3.svg" alt="" /> -->
+                    <img class="dark-image" src="assets/img/illustrations/placeholders/3.svg" alt="" />
+                    <h3 class="dark-inverted">
+                        Verification Failed
+                    </h3>
+                    <p>
+                        Account verification failed. Your link has expired. Please retry.
+                    </p>
+                    <div class="button-wrap">
+                        <a href="/verify" class="button h-button is-primary is-elevated">retry</a>
+                    </div>
+                <?php } ?>
 
             </div>
         </div>

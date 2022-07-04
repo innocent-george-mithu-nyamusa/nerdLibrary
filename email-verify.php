@@ -51,7 +51,6 @@
                 <img class="dark-image" src="assets/img/logo/logo.png" width="112" height="28" alt="">
             </a>
         </div>
-
         <div class="container">
             <!--Container-->
             <div class="login-container is-centered">
@@ -61,7 +60,6 @@
                             <h2 class="form-title has-text-centered">
                                 Please enter your email and press enter.
                             </h2>
-
                             <!--Form-->
                             <div class="login-form">
                                 <div class="form-panel">

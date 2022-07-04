@@ -101,7 +101,7 @@ class Emailer extends Dbh
         $uniqueLinkTxt = "channel=email&account=" . $this->userVerificationId . "&purpose=account_verification&verificationToken=" . $this->verificationCode;
 
         $encodedValues = base64_encode($uniqueLinkTxt);
-        $uniqueLinkUrl = "https://www.nerdlibary.com/account-verification.php?t=" . $encodedValues;
+        $uniqueLinkUrl = "https://www.nerd-libary.com/account-verification.php?t=" . $encodedValues;
 
         $htmlContent = $templates->accountVerifyHtml($this->recipientName, $uniqueLinkUrl);
         $plainContent = $templates->accountVerifyText($this->recipientName, $uniqueLinkUrl);

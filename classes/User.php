@@ -626,8 +626,10 @@ class User extends Dbh
                 $removeVerificationQuery = "DELETE FROM account_verification_codes WHERE account_email_verify=:userEmail";
                 $removeVerificationStmt = $this->connect()->prepare($removeVerificationQuery);
                 $removeVerificationStmt->bindParam(":userEmail", $this->userEmail);
+
                 return $removeVerificationStmt->execute();
             }
+
             return false;
         } catch (Exception $exception) {
             echo "Failed to verify user " . $exception->getMessage();
