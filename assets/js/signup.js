@@ -302,7 +302,9 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
         }, transformFile: function (t, i) {
             $("#crop-modal").addClass("is-active");
             var s = document.createElement("div");
+
             s.style.position = "absolute", s.style.left = 0, s.style.right = 0, s.style.top = 0, s.style.bottom = 0, s.style.zIndex = 9999, s.style.backgroundColor = "#fff", document.getElementById("cropper-wrapper").appendChild(s);
+
             var a = document.createElement("button");
             a.style.position = "absolute", a.style.right = "10px", a.style.bottom = "10px", a.style.zIndex = 9999, a.textContent = "Crop", a.classList.add("button"), s.appendChild(a), a.addEventListener("click", (function () {
                 n.getCroppedCanvas({width: 256, height: 256}).toBlob((function (s) {
@@ -322,6 +324,7 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
                                 placement: "top",
                                 offsetTop: -16
                             }).trigger("click")
+
                         }, o.readAsDataURL(t)
                     }));
 
@@ -358,16 +361,11 @@ Dropzone.autoDiscover = !1, $(document).ready((function () {
 
                         $("#mail_success").fadeIn(500);
                         $(".is-next-4").attr("disabled", !1).removeAttr("disabled");
-
-                        // $("#pay-paynow").removeClass("hidden").attr({
-                        //     "href": data.toString(),
-                        //     "target": "_blank"
-                        // });
-
                     } else {
                         $("#mail_fail").fadeIn(500);
                         $("#is-next-2").removeAttr("disabled");
                     }
+                    
                 }
             }
         );
